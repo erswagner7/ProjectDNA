@@ -52,15 +52,6 @@ Living in isolation can have devastating outcomes for those aged 65+. A NASEM (N
 During these emergency periods of time where in-person contact is limited, there must be some way for families to keep in contact with their elderly relatives.
 # **Solution:**
 Project DNA will solve isolation among Demetia patients by providing a comforting connection between the Dementia patient and the loved relative or caregiver. Our desktop application will be familiar and simple to use for elderly technology users. Caregivers will be able to send comforting messages, reminders, and monitor medication using project DNA.
-# **Contact Information:**
-
-|**Team Member** |<p>**Degree + Track**</p><p>**Track N/A for BSCyber**</p>|**Email**|**Phone Number**|
-| :-: | :-: | :-: | :-: |
-|Erich Wagner|BSIT – Software Dev|wagnere8@mail.uc.edu|513-378-6319|
-|Alexander Burnett|BSIT – Software Dev|burneta3@mail.uc.edu|513-288-2120|
-|Hannah Hupp|BSIT - Cybersecurity|Hupphh@mail.uc.edu|513-212-3277|
-|Kathan Patel|BSIT - Cybersecurity|patel2k2@mail.uc.edu|513-913-5263|
-|Jamie Miozzi|BSIT – Software Dev|MIozzijd@mail.uc.edu|440-679-8860|
 
 # **Sponsor Information (if applicable):**
 
