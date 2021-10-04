@@ -1,0 +1,18 @@
+Project DNA
+
+About
+------------
+Grandma Pat has dementia
+She has a list of medications she needs to take at certain times
+She also misses her family
+
+
+Goals
+-------------
+Pat would love to stay updated with family
+She isn't very tech-savy
+She would love to hear a familiar voice often to not become lonely
+
+Environment
+---------------
+User's homes
