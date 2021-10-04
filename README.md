@@ -22,7 +22,7 @@ School of Information Technology
 
 Alexander Burnett
 
-Erich Wagner
+Erich Wagner ![alt text](C:\Users\erswa\OneDrive\Documents\GitHub\ProjectDNA\Green.png)
 
 Hannah Hupp
 
