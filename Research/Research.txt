@@ -1,0 +1,33 @@
+RESEARCH
+-------------
+
+UI
+----------
+
+
+User Requirements
+------------------
+
+
+Microphone Usage
+-----------------
+
+
+Receiving Messages
+---------------------
+
+
+Recording Messages
+-------------------
+
+
+Device Designs
+--------------
+
+
+Communication with mobile/desktop devices
+-------------------------------------------
+
+
+User Interaction
+------------------
