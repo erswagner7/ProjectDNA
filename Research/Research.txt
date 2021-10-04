@@ -31,3 +31,8 @@ Communication with mobile/desktop devices
 
 User Interaction
 ------------------
+
+
+Authentication Techniques
+--------------------------
+
