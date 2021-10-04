@@ -22,7 +22,7 @@ School of Information Technology
 
 Alexander Burnett
 
-Erich Wagner <!---![](Green.png)--->
+Erich Wagner 
 
 Hannah Hupp
 
