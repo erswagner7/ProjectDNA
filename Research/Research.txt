@@ -1,5 +1,15 @@
 RESEARCH
 -------------
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6786858/ - Mobile Apps for Medication Management: Review and Analysis
+
+Anderson, G. Oscar. “Technology Use and Attitudes among Mid-Life and Older Americans.” Https://Www.aarp.org, Dec. 2017, www.aarp.org/content/dam/aarp/research/surveys_statistics/technology/info-2018/atom-nov-2017-tech-module.doi.10.26419%252Fres.00210.001.pdf.
+
+National Academies of Sciences, Engineering, and Medicine. 2020. Social Isolation and
+ Loneliness in Older Adults: Opportunities for the Health Care System. Washington, DC: The National Academies Press.https://doi.org/10.17226/25663.
+
+Sepúlveda-Loyola, W., Rodríguez-Sánchez, I., Pérez-Rodríguez, P., Ganz, F., Torralba, R.,
+ Oliveira, D. V., & Rodríguez-Mañas, L. (2020). Impact of Social Isolation Due to COVID-19 on Health in Older People: Mental and Physical Effects and Recommendations. The Journal of Nutrition, Health & Aging, 1–10. Advance online publication. https://doi.org/10.1007/s12603-020-1469-2
+
 
 UI
 ----------
