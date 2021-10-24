@@ -78,25 +78,27 @@
             // 
             // pnlNavigation
             // 
+            this.pnlNavigation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlNavigation.BackColor = System.Drawing.Color.BlueViolet;
             this.pnlNavigation.Controls.Add(this.btnSettings);
             this.pnlNavigation.Controls.Add(this.btnMyDay);
             this.pnlNavigation.Controls.Add(this.btnChatsView);
             this.pnlNavigation.Controls.Add(this.btnMyDNA);
-            this.pnlNavigation.Location = new System.Drawing.Point(-1, 175);
+            this.pnlNavigation.Location = new System.Drawing.Point(0, 175);
             this.pnlNavigation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNavigation.Name = "pnlNavigation";
-            this.pnlNavigation.Size = new System.Drawing.Size(267, 782);
+            this.pnlNavigation.Size = new System.Drawing.Size(267, 575);
             this.pnlNavigation.TabIndex = 0;
             // 
             // btnSettings
             // 
             this.btnSettings.BackColor = System.Drawing.Color.BlueViolet;
             this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Location = new System.Drawing.Point(0, 342);
+            this.btnSettings.Location = new System.Drawing.Point(0, 360);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(267, 116);
+            this.btnSettings.Size = new System.Drawing.Size(267, 120);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = false;
@@ -110,7 +112,7 @@
             this.btnMyDay.Location = new System.Drawing.Point(0, 0);
             this.btnMyDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMyDay.Name = "btnMyDay";
-            this.btnMyDay.Size = new System.Drawing.Size(267, 116);
+            this.btnMyDay.Size = new System.Drawing.Size(267, 120);
             this.btnMyDay.TabIndex = 0;
             this.btnMyDay.Text = "My Day";
             this.btnMyDay.UseVisualStyleBackColor = false;
@@ -120,10 +122,10 @@
             // 
             this.btnChatsView.BackColor = System.Drawing.Color.BlueViolet;
             this.btnChatsView.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChatsView.Location = new System.Drawing.Point(0, 113);
+            this.btnChatsView.Location = new System.Drawing.Point(0, 120);
             this.btnChatsView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChatsView.Name = "btnChatsView";
-            this.btnChatsView.Size = new System.Drawing.Size(267, 116);
+            this.btnChatsView.Size = new System.Drawing.Size(267, 120);
             this.btnChatsView.TabIndex = 3;
             this.btnChatsView.Text = "Chats View";
             this.btnChatsView.UseVisualStyleBackColor = false;
@@ -133,10 +135,10 @@
             // 
             this.btnMyDNA.BackColor = System.Drawing.Color.BlueViolet;
             this.btnMyDNA.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMyDNA.Location = new System.Drawing.Point(0, 228);
+            this.btnMyDNA.Location = new System.Drawing.Point(0, 240);
             this.btnMyDNA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMyDNA.Name = "btnMyDNA";
-            this.btnMyDNA.Size = new System.Drawing.Size(267, 116);
+            this.btnMyDNA.Size = new System.Drawing.Size(267, 120);
             this.btnMyDNA.TabIndex = 2;
             this.btnMyDNA.Text = "My DNA";
             this.btnMyDNA.UseVisualStyleBackColor = false;
@@ -167,11 +169,11 @@
             // 
             this.lblUserClock.AutoSize = true;
             this.lblUserClock.BackColor = System.Drawing.Color.BlueViolet;
-            this.lblUserClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserClock.ForeColor = System.Drawing.Color.White;
-            this.lblUserClock.Location = new System.Drawing.Point(675, 95);
+            this.lblUserClock.Location = new System.Drawing.Point(705, 110);
             this.lblUserClock.Name = "lblUserClock";
-            this.lblUserClock.Size = new System.Drawing.Size(126, 31);
+            this.lblUserClock.Size = new System.Drawing.Size(158, 39);
             this.lblUserClock.TabIndex = 3;
             this.lblUserClock.Text = "00:00 am";
             this.lblUserClock.Click += new System.EventHandler(this.LblUserClock_Click);
@@ -190,6 +192,9 @@
             // 
             // pnlUserMyDay
             // 
+            this.pnlUserMyDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlUserMyDay.AutoScroll = true;
             this.pnlUserMyDay.BackColor = System.Drawing.Color.BlueViolet;
             this.pnlUserMyDay.Controls.Add(this.lblMyDayReminders);
@@ -209,7 +214,7 @@
             this.lblMyDayMedication.AutoSize = true;
             this.lblMyDayMedication.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayMedication.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedication.Location = new System.Drawing.Point(27, 114);
+            this.lblMyDayMedication.Location = new System.Drawing.Point(30, 114);
             this.lblMyDayMedication.Name = "lblMyDayMedication";
             this.lblMyDayMedication.Size = new System.Drawing.Size(240, 42);
             this.lblMyDayMedication.TabIndex = 2;
@@ -226,19 +231,19 @@
             this.pnlMyDayMedications.Controls.Add(this.pnlMyDayMedicationTodayList1);
             this.pnlMyDayMedications.Controls.Add(this.lblMyDayMedicationToday);
             this.pnlMyDayMedications.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlMyDayMedications.Location = new System.Drawing.Point(32, 165);
+            this.pnlMyDayMedications.Location = new System.Drawing.Point(30, 165);
             this.pnlMyDayMedications.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMyDayMedications.Name = "pnlMyDayMedications";
-            this.pnlMyDayMedications.Size = new System.Drawing.Size(1184, 375);
+            this.pnlMyDayMedications.Size = new System.Drawing.Size(1190, 375);
             this.pnlMyDayMedications.TabIndex = 1;
             // 
             // pnlMedicationStatus1
             // 
             this.pnlMedicationStatus1.BackColor = System.Drawing.Color.Maroon;
-            this.pnlMedicationStatus1.Location = new System.Drawing.Point(1077, 69);
+            this.pnlMedicationStatus1.Location = new System.Drawing.Point(1123, 65);
             this.pnlMedicationStatus1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMedicationStatus1.Name = "pnlMedicationStatus1";
-            this.pnlMedicationStatus1.Size = new System.Drawing.Size(40, 37);
+            this.pnlMedicationStatus1.Size = new System.Drawing.Size(40, 40);
             this.pnlMedicationStatus1.TabIndex = 4;
             // 
             // pnlMyDayMedicationUpcomingList2
@@ -248,7 +253,7 @@
             this.pnlMyDayMedicationUpcomingList2.Location = new System.Drawing.Point(20, 313);
             this.pnlMyDayMedicationUpcomingList2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMyDayMedicationUpcomingList2.Name = "pnlMyDayMedicationUpcomingList2";
-            this.pnlMyDayMedicationUpcomingList2.Size = new System.Drawing.Size(1121, 49);
+            this.pnlMyDayMedicationUpcomingList2.Size = new System.Drawing.Size(1150, 49);
             this.pnlMyDayMedicationUpcomingList2.TabIndex = 2;
             // 
             // lblMyDayMedicationUpcomingList2
@@ -270,7 +275,7 @@
             this.pnlMyDayMedicationUpcomingList1.Location = new System.Drawing.Point(20, 241);
             this.pnlMyDayMedicationUpcomingList1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMyDayMedicationUpcomingList1.Name = "pnlMyDayMedicationUpcomingList1";
-            this.pnlMyDayMedicationUpcomingList1.Size = new System.Drawing.Size(1121, 49);
+            this.pnlMyDayMedicationUpcomingList1.Size = new System.Drawing.Size(1150, 49);
             this.pnlMyDayMedicationUpcomingList1.TabIndex = 2;
             // 
             // lblMyDayMedicationUpcomingList1
@@ -290,7 +295,7 @@
             this.lblMyDayMedicationUpcoming.AutoSize = true;
             this.lblMyDayMedicationUpcoming.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayMedicationUpcoming.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationUpcoming.Location = new System.Drawing.Point(15, 196);
+            this.lblMyDayMedicationUpcoming.Location = new System.Drawing.Point(20, 196);
             this.lblMyDayMedicationUpcoming.Name = "lblMyDayMedicationUpcoming";
             this.lblMyDayMedicationUpcoming.Size = new System.Drawing.Size(214, 36);
             this.lblMyDayMedicationUpcoming.TabIndex = 3;
@@ -306,21 +311,21 @@
             this.pnlMyDayMedicationTodayList2.Location = new System.Drawing.Point(20, 132);
             this.pnlMyDayMedicationTodayList2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMyDayMedicationTodayList2.Name = "pnlMyDayMedicationTodayList2";
-            this.pnlMyDayMedicationTodayList2.Size = new System.Drawing.Size(1121, 49);
+            this.pnlMyDayMedicationTodayList2.Size = new System.Drawing.Size(1150, 50);
             this.pnlMyDayMedicationTodayList2.TabIndex = 2;
             // 
             // pnlMedicationStatus2
             // 
             this.pnlMedicationStatus2.BackColor = System.Drawing.Color.Maroon;
-            this.pnlMedicationStatus2.Location = new System.Drawing.Point(1057, 6);
+            this.pnlMedicationStatus2.Location = new System.Drawing.Point(1103, 5);
             this.pnlMedicationStatus2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMedicationStatus2.Name = "pnlMedicationStatus2";
-            this.pnlMedicationStatus2.Size = new System.Drawing.Size(40, 37);
+            this.pnlMedicationStatus2.Size = new System.Drawing.Size(40, 40);
             this.pnlMedicationStatus2.TabIndex = 3;
             // 
             // btnNotTaken2
             // 
-            this.btnNotTaken2.Location = new System.Drawing.Point(583, 6);
+            this.btnNotTaken2.Location = new System.Drawing.Point(685, 7);
             this.btnNotTaken2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNotTaken2.Name = "btnNotTaken2";
             this.btnNotTaken2.Size = new System.Drawing.Size(203, 36);
@@ -330,7 +335,7 @@
             // 
             // btnTaken2
             // 
-            this.btnTaken2.Location = new System.Drawing.Point(809, 6);
+            this.btnTaken2.Location = new System.Drawing.Point(895, 7);
             this.btnTaken2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTaken2.Name = "btnTaken2";
             this.btnTaken2.Size = new System.Drawing.Size(203, 36);
@@ -357,15 +362,15 @@
             this.pnlMyDayMedicationTodayList1.Controls.Add(this.btnTaken1);
             this.pnlMyDayMedicationTodayList1.Controls.Add(this.btnNotTaken1);
             this.pnlMyDayMedicationTodayList1.Controls.Add(this.lblMyDayMedicationTodayList1);
-            this.pnlMyDayMedicationTodayList1.Location = new System.Drawing.Point(20, 63);
+            this.pnlMyDayMedicationTodayList1.Location = new System.Drawing.Point(20, 60);
             this.pnlMyDayMedicationTodayList1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMyDayMedicationTodayList1.Name = "pnlMyDayMedicationTodayList1";
-            this.pnlMyDayMedicationTodayList1.Size = new System.Drawing.Size(1121, 49);
+            this.pnlMyDayMedicationTodayList1.Size = new System.Drawing.Size(1150, 50);
             this.pnlMyDayMedicationTodayList1.TabIndex = 1;
             // 
             // btnTaken1
             // 
-            this.btnTaken1.Location = new System.Drawing.Point(809, 7);
+            this.btnTaken1.Location = new System.Drawing.Point(895, 7);
             this.btnTaken1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTaken1.Name = "btnTaken1";
             this.btnTaken1.Size = new System.Drawing.Size(203, 36);
@@ -376,7 +381,7 @@
             // 
             // btnNotTaken1
             // 
-            this.btnNotTaken1.Location = new System.Drawing.Point(583, 7);
+            this.btnNotTaken1.Location = new System.Drawing.Point(687, 7);
             this.btnNotTaken1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNotTaken1.Name = "btnNotTaken1";
             this.btnNotTaken1.Size = new System.Drawing.Size(203, 36);
@@ -401,7 +406,7 @@
             this.lblMyDayMedicationToday.AutoSize = true;
             this.lblMyDayMedicationToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayMedicationToday.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationToday.Location = new System.Drawing.Point(15, 16);
+            this.lblMyDayMedicationToday.Location = new System.Drawing.Point(20, 16);
             this.lblMyDayMedicationToday.Name = "lblMyDayMedicationToday";
             this.lblMyDayMedicationToday.Size = new System.Drawing.Size(202, 36);
             this.lblMyDayMedicationToday.TabIndex = 0;
@@ -412,7 +417,7 @@
             this.lblMyDayHead.AutoSize = true;
             this.lblMyDayHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayHead.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayHead.Location = new System.Drawing.Point(24, 26);
+            this.lblMyDayHead.Location = new System.Drawing.Point(30, 26);
             this.lblMyDayHead.Name = "lblMyDayHead";
             this.lblMyDayHead.Size = new System.Drawing.Size(790, 54);
             this.lblMyDayHead.TabIndex = 0;
@@ -425,10 +430,10 @@
             this.pnlMyDayReminders.Controls.Add(this.lblMyDayRemindersUpcoming);
             this.pnlMyDayReminders.Controls.Add(this.lblMyDayRemindersToday);
             this.pnlMyDayReminders.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlMyDayReminders.Location = new System.Drawing.Point(32, 601);
+            this.pnlMyDayReminders.Location = new System.Drawing.Point(30, 600);
             this.pnlMyDayReminders.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMyDayReminders.Name = "pnlMyDayReminders";
-            this.pnlMyDayReminders.Size = new System.Drawing.Size(1184, 203);
+            this.pnlMyDayReminders.Size = new System.Drawing.Size(1190, 200);
             this.pnlMyDayReminders.TabIndex = 3;
             // 
             // pnlMyDayRemindersUpcomingList1
@@ -481,7 +486,7 @@
             this.lblMyDayReminders.AutoSize = true;
             this.lblMyDayReminders.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayReminders.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayReminders.Location = new System.Drawing.Point(27, 555);
+            this.lblMyDayReminders.Location = new System.Drawing.Point(30, 555);
             this.lblMyDayReminders.Name = "lblMyDayReminders";
             this.lblMyDayReminders.Size = new System.Drawing.Size(218, 42);
             this.lblMyDayReminders.TabIndex = 4;
