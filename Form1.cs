@@ -18,8 +18,11 @@ namespace PrototypeDNA
 
             StartTimer();
 
+            pnlUserMyDNA.Hide();
+
             lblUserWelcome.Text = "Welcome User, today is " + DateTime.Now.ToLongDateString();
             lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
+            lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString();
         }
         System.Windows.Forms.Timer tmr = null;
         private void StartTimer()
@@ -68,6 +71,7 @@ namespace PrototypeDNA
         private void btnChatsView_Click(object sender, EventArgs e)
         {
             pnlUserMyDay.Hide();
+            pnlUserMyDNA.Hide();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -85,6 +89,7 @@ namespace PrototypeDNA
         private void btnMyDNA_Click(object sender, EventArgs e)
         {
             pnlUserMyDay.Hide();
+            pnlUserMyDNA.Show();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -102,6 +107,7 @@ namespace PrototypeDNA
         private void btnSettings_Click(object sender, EventArgs e)
         {
             pnlUserMyDay.Hide();
+            pnlUserMyDNA.Hide();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -119,6 +125,7 @@ namespace PrototypeDNA
         private void btnMyDay_Click(object sender, EventArgs e)
         {
             pnlUserMyDay.Show();
+            pnlUserMyDNA.Hide();
 
             btnMyDay.ForeColor = Color.White;
             btnMyDay.BackColor = Color.MidnightBlue;
