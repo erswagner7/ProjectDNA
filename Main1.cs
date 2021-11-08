@@ -18,11 +18,17 @@ namespace PrototypeDNA
 
             StartTimer();
 
+            Forms.myDay myDay = new Forms.myDay() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pContainer.Controls.Add(myDay);
+            myDay.Show();
+
+            /*
             pnlUserMyDNA.Hide();
 
             lblUserWelcome.Text = "Welcome User, today is " + DateTime.Now.ToLongDateString();
             lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
             lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString();
+        */
         }
         System.Windows.Forms.Timer tmr = null;
         private void StartTimer()
@@ -46,22 +52,7 @@ namespace PrototypeDNA
 
         }
 
-        private void BtnTaken1_Click(object sender, EventArgs e)
-        {
-            pnlMedicationStatus1.BackColor = Color.Green;
-            lblMyDayMedicationTodayList1.ForeColor = Color.Green;
-            btnNotTaken1.Hide();
-            btnTaken1.Hide();
-
-        }
-
-        private void BtnTaken2_Click(object sender, EventArgs e)
-        {
-            pnlMedicationStatus2.BackColor = Color.Green;
-            lblMyDayMedicationTodayList2.ForeColor = Color.Green;
-            btnNotTaken2.Hide();
-            btnTaken2.Hide();
-        }
+        
 
         private void pnlUserMyDay_Paint(object sender, PaintEventArgs e)
         {
@@ -70,8 +61,7 @@ namespace PrototypeDNA
 
         private void btnChatsView_Click(object sender, EventArgs e)
         {
-            pnlUserMyDay.Hide();
-            pnlUserMyDNA.Hide();
+            this.pContainer.Controls.Clear();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -88,8 +78,10 @@ namespace PrototypeDNA
 
         private void btnMyDNA_Click(object sender, EventArgs e)
         {
-            pnlUserMyDay.Hide();
-            pnlUserMyDNA.Show();
+            this.pContainer.Controls.Clear();
+            Forms.myDNA myDNA = new Forms.myDNA() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pContainer.Controls.Add(myDNA);
+            myDNA.Show();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -106,8 +98,10 @@ namespace PrototypeDNA
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            pnlUserMyDay.Hide();
-            pnlUserMyDNA.Hide();
+            this.pContainer.Controls.Clear();
+            Forms.userSettings userSettings = new Forms.userSettings() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pContainer.Controls.Add(userSettings);
+            userSettings.Show();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -124,8 +118,10 @@ namespace PrototypeDNA
 
         private void btnMyDay_Click(object sender, EventArgs e)
         {
-            pnlUserMyDay.Show();
-            pnlUserMyDNA.Hide();
+            this.pContainer.Controls.Clear();
+            Forms.myDay myDay = new Forms.myDay() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pContainer.Controls.Add(myDay);
+            myDay.Show();
 
             btnMyDay.ForeColor = Color.White;
             btnMyDay.BackColor = Color.MidnightBlue;
@@ -138,6 +134,17 @@ namespace PrototypeDNA
 
             btnSettings.ForeColor = Color.Black;
             btnSettings.BackColor = Color.BlueViolet;
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog dlg = new ColorDialog();
+            dlg.ShowDialog();
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                btnSettings.ForeColor = dlg.Color;
+            }
         }
     }
 }
