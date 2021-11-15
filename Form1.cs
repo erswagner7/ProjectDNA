@@ -16,9 +16,12 @@ namespace PrototypeDNA
         {
             InitializeComponent();
 
+
             StartTimer();
 
             pnlUserMyDNA.Hide();
+            pnlUserCreateNewConnection.Hide();
+
 
             lblUserWelcome.Text = "Welcome User, today is " + DateTime.Now.ToLongDateString();
             lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
@@ -138,6 +141,60 @@ namespace PrototypeDNA
 
             btnSettings.ForeColor = Color.Black;
             btnSettings.BackColor = Color.BlueViolet;
+        }
+
+        private void btnUserNewConnection_Click(object sender, EventArgs e)
+        {
+            pnlUserMyConnections.Hide();
+            pnlUserCreateNewConnection.Show();
+        }
+
+        private void btnUserCreateNewConnectionAddNewConnection_Click(object sender, EventArgs e)
+        {
+            pnlUserMyConnections.Show();
+            pnlUserCreateNewConnection.Hide();
+            String newPatientName = txtUserCreateNewConnectionUsername.Text;
+            Patient patient = new Patient(txtUserCreateNewConnectionUsername.Text, txtUserCreateNewConnectionFirstname.Text, txtUserCreateNewConnectionLastname.Text, Convert.ToInt32(txtUserCreateNewConnectionAge.Text), txtUserCreateNewConnectionAddress.Text);
+
+            FlowLayoutPanel newPanel = new FlowLayoutPanel();
+            newPanel.Height = 147;
+            newPanel.Width = (pnlUserMyConnections.Width - 40);
+            newPanel.AutoScroll = true;
+            newPanel.FlowDirection = FlowDirection.TopDown;
+            newPanel.BackColor = Color.DarkGray;
+            newPanel.AutoScroll = true;
+            pnlUserMyConnections.Controls.Add(newPanel);
+
+            Label lblUserNewConnectionName = new Label();
+            lblUserNewConnectionName.Text = "Name: " + txtUserCreateNewConnectionFirstname.Text + " " + txtUserCreateNewConnectionLastname.Text;
+            newPanel.Controls.Add(lblUserNewConnectionName);
+
+            Label lblUserNewConnectionAge = new Label();
+            lblUserNewConnectionAge.Text = "Age: " + Convert.ToInt32(txtUserCreateNewConnectionAge.Text);
+            newPanel.Controls.Add(lblUserNewConnectionAge);
+            
+            Label lblUserNewConnectionAddress = new Label();
+            lblUserNewConnectionAddress.Text = "Address: " + txtUserCreateNewConnectionAddress.Text;
+            newPanel.Controls.Add(lblUserNewConnectionAddress);
+
+
+            txtUserCreateNewConnectionUsername.Text = "";
+            txtUserCreateNewConnectionFirstname.Text = "";
+            txtUserCreateNewConnectionLastname.Text = "";
+            txtUserCreateNewConnectionAge.Text = "";
+            txtUserCreateNewConnectionAddress.Text = "";
+        }
+
+        private void btnUserCreateNewConnectionCancel_Click(object sender, EventArgs e)
+        {
+            pnlUserMyConnections.Show();
+            pnlUserCreateNewConnection.Hide();
+
+            txtUserCreateNewConnectionUsername.Text = "";
+            txtUserCreateNewConnectionFirstname.Text = "";
+            txtUserCreateNewConnectionLastname.Text = "";
+            txtUserCreateNewConnectionAge.Text = "";
+            txtUserCreateNewConnectionAddress.Text = "";
         }
     }
 }
