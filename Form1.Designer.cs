@@ -102,20 +102,20 @@
             this.btnUserNewConnection = new System.Windows.Forms.Button();
             this.lblUserMyConnections = new System.Windows.Forms.Label();
             this.lblMyDNAHead = new System.Windows.Forms.Label();
-            this.pnlUserMyConnections = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlUserCreateNewConnection = new System.Windows.Forms.Panel();
-            this.lblUserCreateNewConnectionUsername = new System.Windows.Forms.Label();
-            this.txtUserCreateNewConnectionUsername = new System.Windows.Forms.TextBox();
-            this.txtUserCreateNewConnectionFirstname = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtUserCreateNewConnectionLastname = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtUserCreateNewConnectionAge = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnUserCreateNewConnectionCancel = new System.Windows.Forms.Button();
+            this.btnUserCreateNewConnectionAddNewConnection = new System.Windows.Forms.Button();
             this.txtUserCreateNewConnectionAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnUserCreateNewConnectionAddNewConnection = new System.Windows.Forms.Button();
-            this.btnUserCreateNewConnectionCancel = new System.Windows.Forms.Button();
+            this.txtUserCreateNewConnectionAge = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtUserCreateNewConnectionLastname = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUserCreateNewConnectionFirstname = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUserCreateNewConnectionUsername = new System.Windows.Forms.TextBox();
+            this.lblUserCreateNewConnectionUsername = new System.Windows.Forms.Label();
+            this.pnlUserMyConnections = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlNavigation.SuspendLayout();
             this.pnlUserWelcome.SuspendLayout();
             this.pnlUserMyDay.SuspendLayout();
@@ -941,7 +941,7 @@
             // 
             this.btnUserNewConnection.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnUserNewConnection.ForeColor = System.Drawing.Color.White;
-            this.btnUserNewConnection.Location = new System.Drawing.Point(348, 120);
+            this.btnUserNewConnection.Location = new System.Drawing.Point(340, 123);
             this.btnUserNewConnection.Name = "btnUserNewConnection";
             this.btnUserNewConnection.Size = new System.Drawing.Size(202, 36);
             this.btnUserNewConnection.TabIndex = 3;
@@ -954,7 +954,7 @@
             this.lblUserMyConnections.AutoSize = true;
             this.lblUserMyConnections.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserMyConnections.ForeColor = System.Drawing.Color.White;
-            this.lblUserMyConnections.Location = new System.Drawing.Point(30, 114);
+            this.lblUserMyConnections.Location = new System.Drawing.Point(22, 117);
             this.lblUserMyConnections.Name = "lblUserMyConnections";
             this.lblUserMyConnections.Size = new System.Drawing.Size(312, 42);
             this.lblUserMyConnections.TabIndex = 2;
@@ -970,17 +970,6 @@
             this.lblMyDNAHead.Size = new System.Drawing.Size(805, 54);
             this.lblMyDNAHead.TabIndex = 0;
             this.lblMyDNAHead.Text = "My DNA - Saturday October 9, 2021";
-            // 
-            // pnlUserMyConnections
-            // 
-            this.pnlUserMyConnections.AutoScroll = true;
-            this.pnlUserMyConnections.BackColor = System.Drawing.Color.MidnightBlue;
-            this.pnlUserMyConnections.ForeColor = System.Drawing.Color.Black;
-            this.pnlUserMyConnections.Location = new System.Drawing.Point(30, 165);
-            this.pnlUserMyConnections.Name = "pnlUserMyConnections";
-            this.pnlUserMyConnections.Padding = new System.Windows.Forms.Padding(20);
-            this.pnlUserMyConnections.Size = new System.Drawing.Size(520, 385);
-            this.pnlUserMyConnections.TabIndex = 7;
             // 
             // pnlUserCreateNewConnection
             // 
@@ -998,94 +987,34 @@
             this.pnlUserCreateNewConnection.Controls.Add(this.label1);
             this.pnlUserCreateNewConnection.Controls.Add(this.txtUserCreateNewConnectionUsername);
             this.pnlUserCreateNewConnection.Controls.Add(this.lblUserCreateNewConnectionUsername);
-            this.pnlUserCreateNewConnection.Location = new System.Drawing.Point(27, 165);
+            this.pnlUserCreateNewConnection.Location = new System.Drawing.Point(19, 168);
             this.pnlUserCreateNewConnection.Name = "pnlUserCreateNewConnection";
             this.pnlUserCreateNewConnection.Size = new System.Drawing.Size(523, 387);
             this.pnlUserCreateNewConnection.TabIndex = 8;
             // 
-            // lblUserCreateNewConnectionUsername
+            // btnUserCreateNewConnectionCancel
             // 
-            this.lblUserCreateNewConnectionUsername.AutoSize = true;
-            this.lblUserCreateNewConnectionUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserCreateNewConnectionUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUserCreateNewConnectionUsername.Location = new System.Drawing.Point(18, 24);
-            this.lblUserCreateNewConnectionUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUserCreateNewConnectionUsername.Name = "lblUserCreateNewConnectionUsername";
-            this.lblUserCreateNewConnectionUsername.Size = new System.Drawing.Size(153, 32);
-            this.lblUserCreateNewConnectionUsername.TabIndex = 1;
-            this.lblUserCreateNewConnectionUsername.Text = "Username:";
+            this.btnUserCreateNewConnectionCancel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUserCreateNewConnectionCancel.ForeColor = System.Drawing.Color.White;
+            this.btnUserCreateNewConnectionCancel.Location = new System.Drawing.Point(20, 313);
+            this.btnUserCreateNewConnectionCancel.Name = "btnUserCreateNewConnectionCancel";
+            this.btnUserCreateNewConnectionCancel.Size = new System.Drawing.Size(202, 49);
+            this.btnUserCreateNewConnectionCancel.TabIndex = 12;
+            this.btnUserCreateNewConnectionCancel.Text = "Cancel";
+            this.btnUserCreateNewConnectionCancel.UseVisualStyleBackColor = false;
+            this.btnUserCreateNewConnectionCancel.Click += new System.EventHandler(this.btnUserCreateNewConnectionCancel_Click);
             // 
-            // txtUserCreateNewConnectionUsername
+            // btnUserCreateNewConnectionAddNewConnection
             // 
-            this.txtUserCreateNewConnectionUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserCreateNewConnectionUsername.Location = new System.Drawing.Point(173, 24);
-            this.txtUserCreateNewConnectionUsername.Name = "txtUserCreateNewConnectionUsername";
-            this.txtUserCreateNewConnectionUsername.Size = new System.Drawing.Size(328, 38);
-            this.txtUserCreateNewConnectionUsername.TabIndex = 2;
-            this.txtUserCreateNewConnectionUsername.Text = "JaneD123";
-            // 
-            // txtUserCreateNewConnectionFirstname
-            // 
-            this.txtUserCreateNewConnectionFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserCreateNewConnectionFirstname.Location = new System.Drawing.Point(173, 77);
-            this.txtUserCreateNewConnectionFirstname.Name = "txtUserCreateNewConnectionFirstname";
-            this.txtUserCreateNewConnectionFirstname.Size = new System.Drawing.Size(328, 38);
-            this.txtUserCreateNewConnectionFirstname.TabIndex = 4;
-            this.txtUserCreateNewConnectionFirstname.Text = "Jane";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 77);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "First Name:";
-            // 
-            // txtUserCreateNewConnectionLastname
-            // 
-            this.txtUserCreateNewConnectionLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserCreateNewConnectionLastname.Location = new System.Drawing.Point(173, 130);
-            this.txtUserCreateNewConnectionLastname.Name = "txtUserCreateNewConnectionLastname";
-            this.txtUserCreateNewConnectionLastname.Size = new System.Drawing.Size(328, 38);
-            this.txtUserCreateNewConnectionLastname.TabIndex = 6;
-            this.txtUserCreateNewConnectionLastname.Text = "Doe";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 130);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 32);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Last Name:";
-            // 
-            // txtUserCreateNewConnectionAge
-            // 
-            this.txtUserCreateNewConnectionAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserCreateNewConnectionAge.Location = new System.Drawing.Point(173, 181);
-            this.txtUserCreateNewConnectionAge.Name = "txtUserCreateNewConnectionAge";
-            this.txtUserCreateNewConnectionAge.Size = new System.Drawing.Size(328, 38);
-            this.txtUserCreateNewConnectionAge.TabIndex = 8;
-            this.txtUserCreateNewConnectionAge.Text = "87";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(96, 181);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 32);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Age:";
+            this.btnUserCreateNewConnectionAddNewConnection.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUserCreateNewConnectionAddNewConnection.ForeColor = System.Drawing.Color.White;
+            this.btnUserCreateNewConnectionAddNewConnection.Location = new System.Drawing.Point(300, 313);
+            this.btnUserCreateNewConnectionAddNewConnection.Name = "btnUserCreateNewConnectionAddNewConnection";
+            this.btnUserCreateNewConnectionAddNewConnection.Size = new System.Drawing.Size(202, 49);
+            this.btnUserCreateNewConnectionAddNewConnection.TabIndex = 11;
+            this.btnUserCreateNewConnectionAddNewConnection.Text = "Add New Connection";
+            this.btnUserCreateNewConnectionAddNewConnection.UseVisualStyleBackColor = false;
+            this.btnUserCreateNewConnectionAddNewConnection.Click += new System.EventHandler(this.btnUserCreateNewConnectionAddNewConnection_Click);
             // 
             // txtUserCreateNewConnectionAddress
             // 
@@ -1108,29 +1037,100 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Address:";
             // 
-            // btnUserCreateNewConnectionAddNewConnection
+            // txtUserCreateNewConnectionAge
             // 
-            this.btnUserCreateNewConnectionAddNewConnection.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnUserCreateNewConnectionAddNewConnection.ForeColor = System.Drawing.Color.White;
-            this.btnUserCreateNewConnectionAddNewConnection.Location = new System.Drawing.Point(300, 313);
-            this.btnUserCreateNewConnectionAddNewConnection.Name = "btnUserCreateNewConnectionAddNewConnection";
-            this.btnUserCreateNewConnectionAddNewConnection.Size = new System.Drawing.Size(202, 49);
-            this.btnUserCreateNewConnectionAddNewConnection.TabIndex = 11;
-            this.btnUserCreateNewConnectionAddNewConnection.Text = "Add New Connection";
-            this.btnUserCreateNewConnectionAddNewConnection.UseVisualStyleBackColor = false;
-            this.btnUserCreateNewConnectionAddNewConnection.Click += new System.EventHandler(this.btnUserCreateNewConnectionAddNewConnection_Click);
+            this.txtUserCreateNewConnectionAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserCreateNewConnectionAge.Location = new System.Drawing.Point(173, 181);
+            this.txtUserCreateNewConnectionAge.Name = "txtUserCreateNewConnectionAge";
+            this.txtUserCreateNewConnectionAge.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionAge.TabIndex = 8;
+            this.txtUserCreateNewConnectionAge.Text = "87";
             // 
-            // btnUserCreateNewConnectionCancel
+            // label3
             // 
-            this.btnUserCreateNewConnectionCancel.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnUserCreateNewConnectionCancel.ForeColor = System.Drawing.Color.White;
-            this.btnUserCreateNewConnectionCancel.Location = new System.Drawing.Point(20, 313);
-            this.btnUserCreateNewConnectionCancel.Name = "btnUserCreateNewConnectionCancel";
-            this.btnUserCreateNewConnectionCancel.Size = new System.Drawing.Size(202, 49);
-            this.btnUserCreateNewConnectionCancel.TabIndex = 12;
-            this.btnUserCreateNewConnectionCancel.Text = "Cancel";
-            this.btnUserCreateNewConnectionCancel.UseVisualStyleBackColor = false;
-            this.btnUserCreateNewConnectionCancel.Click += new System.EventHandler(this.btnUserCreateNewConnectionCancel_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(96, 181);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 32);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Age:";
+            // 
+            // txtUserCreateNewConnectionLastname
+            // 
+            this.txtUserCreateNewConnectionLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserCreateNewConnectionLastname.Location = new System.Drawing.Point(173, 130);
+            this.txtUserCreateNewConnectionLastname.Name = "txtUserCreateNewConnectionLastname";
+            this.txtUserCreateNewConnectionLastname.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionLastname.TabIndex = 6;
+            this.txtUserCreateNewConnectionLastname.Text = "Doe";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(10, 130);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 32);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Last Name:";
+            // 
+            // txtUserCreateNewConnectionFirstname
+            // 
+            this.txtUserCreateNewConnectionFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserCreateNewConnectionFirstname.Location = new System.Drawing.Point(173, 77);
+            this.txtUserCreateNewConnectionFirstname.Name = "txtUserCreateNewConnectionFirstname";
+            this.txtUserCreateNewConnectionFirstname.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionFirstname.TabIndex = 4;
+            this.txtUserCreateNewConnectionFirstname.Text = "Jane";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 77);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 32);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "First Name:";
+            // 
+            // txtUserCreateNewConnectionUsername
+            // 
+            this.txtUserCreateNewConnectionUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserCreateNewConnectionUsername.Location = new System.Drawing.Point(173, 24);
+            this.txtUserCreateNewConnectionUsername.Name = "txtUserCreateNewConnectionUsername";
+            this.txtUserCreateNewConnectionUsername.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionUsername.TabIndex = 2;
+            this.txtUserCreateNewConnectionUsername.Text = "JaneD123";
+            // 
+            // lblUserCreateNewConnectionUsername
+            // 
+            this.lblUserCreateNewConnectionUsername.AutoSize = true;
+            this.lblUserCreateNewConnectionUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserCreateNewConnectionUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUserCreateNewConnectionUsername.Location = new System.Drawing.Point(18, 24);
+            this.lblUserCreateNewConnectionUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserCreateNewConnectionUsername.Name = "lblUserCreateNewConnectionUsername";
+            this.lblUserCreateNewConnectionUsername.Size = new System.Drawing.Size(153, 32);
+            this.lblUserCreateNewConnectionUsername.TabIndex = 1;
+            this.lblUserCreateNewConnectionUsername.Text = "Username:";
+            // 
+            // pnlUserMyConnections
+            // 
+            this.pnlUserMyConnections.AutoScroll = true;
+            this.pnlUserMyConnections.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pnlUserMyConnections.ForeColor = System.Drawing.Color.Black;
+            this.pnlUserMyConnections.Location = new System.Drawing.Point(22, 168);
+            this.pnlUserMyConnections.Name = "pnlUserMyConnections";
+            this.pnlUserMyConnections.Padding = new System.Windows.Forms.Padding(20);
+            this.pnlUserMyConnections.Size = new System.Drawing.Size(520, 385);
+            this.pnlUserMyConnections.TabIndex = 7;
             // 
             // frmWelcomeUser
             // 

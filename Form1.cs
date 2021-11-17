@@ -162,19 +162,30 @@ namespace PrototypeDNA
             newPanel.AutoScroll = true;
             newPanel.FlowDirection = FlowDirection.TopDown;
             newPanel.BackColor = Color.DarkGray;
-            newPanel.AutoScroll = true;
             pnlUserMyConnections.Controls.Add(newPanel);
 
             Label lblUserNewConnectionName = new Label();
             lblUserNewConnectionName.Text = "Name: " + txtUserCreateNewConnectionFirstname.Text + " " + txtUserCreateNewConnectionLastname.Text;
+            lblUserNewConnectionName.Font = new Font(FontFamily.GenericSansSerif, 16);
+            lblUserNewConnectionName.Margin = new Padding(7);
+            lblUserNewConnectionName.ForeColor = Color.White;
+            lblUserNewConnectionName.AutoSize = true;
             newPanel.Controls.Add(lblUserNewConnectionName);
 
             Label lblUserNewConnectionAge = new Label();
             lblUserNewConnectionAge.Text = "Age: " + Convert.ToInt32(txtUserCreateNewConnectionAge.Text);
+            lblUserNewConnectionAge.Font = new Font(FontFamily.GenericSansSerif, 16);
+            lblUserNewConnectionAge.Margin = new Padding(7);
+            lblUserNewConnectionAge.ForeColor = Color.White;
+            lblUserNewConnectionAge.AutoSize = true;
             newPanel.Controls.Add(lblUserNewConnectionAge);
             
             Label lblUserNewConnectionAddress = new Label();
             lblUserNewConnectionAddress.Text = "Address: " + txtUserCreateNewConnectionAddress.Text;
+            lblUserNewConnectionAddress.Font = new Font(FontFamily.GenericSansSerif, 16);
+            lblUserNewConnectionAddress.Margin = new Padding(7);
+            lblUserNewConnectionAddress.ForeColor = Color.White;
+            lblUserNewConnectionAddress.AutoSize = true;
             newPanel.Controls.Add(lblUserNewConnectionAddress);
 
 
