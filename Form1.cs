@@ -25,7 +25,6 @@ namespace PrototypeDNA
 
             lblUserWelcome.Text = "Welcome User, today is " + DateTime.Now.ToLongDateString();
             lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
-            lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString();
         }
         System.Windows.Forms.Timer tmr = null;
         private void StartTimer()
@@ -206,6 +205,11 @@ namespace PrototypeDNA
             txtUserCreateNewConnectionLastname.Text = "";
             txtUserCreateNewConnectionAge.Text = "";
             txtUserCreateNewConnectionAddress.Text = "";
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

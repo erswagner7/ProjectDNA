@@ -78,7 +78,6 @@
             this.button28 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -90,7 +89,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -116,6 +114,14 @@
             this.txtUserCreateNewConnectionUsername = new System.Windows.Forms.TextBox();
             this.lblUserCreateNewConnectionUsername = new System.Windows.Forms.Label();
             this.pnlUserMyConnections = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.pnlNavigation.SuspendLayout();
             this.pnlUserWelcome.SuspendLayout();
             this.pnlUserMyDay.SuspendLayout();
@@ -132,6 +138,8 @@
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pnlUserCreateNewConnection.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNavigation
@@ -569,14 +577,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlUserMyDNA.AutoScroll = true;
             this.pnlUserMyDNA.BackColor = System.Drawing.Color.BlueViolet;
+            this.pnlUserMyDNA.Controls.Add(this.panel1);
             this.pnlUserMyDNA.Controls.Add(this.btnUserMyAudio);
             this.pnlUserMyDNA.Controls.Add(this.lblUserMyAudio);
             this.pnlUserMyDNA.Controls.Add(this.panel3);
             this.pnlUserMyDNA.Controls.Add(this.btnUserNewConnection);
             this.pnlUserMyDNA.Controls.Add(this.lblUserMyConnections);
             this.pnlUserMyDNA.Controls.Add(this.lblMyDNAHead);
-            this.pnlUserMyDNA.Controls.Add(this.pnlUserCreateNewConnection);
             this.pnlUserMyDNA.Controls.Add(this.pnlUserMyConnections);
+            this.pnlUserMyDNA.Controls.Add(this.pnlUserCreateNewConnection);
             this.pnlUserMyDNA.Location = new System.Drawing.Point(271, 175);
             this.pnlUserMyDNA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlUserMyDNA.Name = "pnlUserMyDNA";
@@ -587,9 +596,9 @@
             // 
             this.btnUserMyAudio.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnUserMyAudio.ForeColor = System.Drawing.Color.White;
-            this.btnUserMyAudio.Location = new System.Drawing.Point(777, 120);
+            this.btnUserMyAudio.Location = new System.Drawing.Point(911, 46);
             this.btnUserMyAudio.Name = "btnUserMyAudio";
-            this.btnUserMyAudio.Size = new System.Drawing.Size(469, 36);
+            this.btnUserMyAudio.Size = new System.Drawing.Size(320, 36);
             this.btnUserMyAudio.TabIndex = 6;
             this.btnUserMyAudio.Text = "New Audio";
             this.btnUserMyAudio.UseVisualStyleBackColor = false;
@@ -599,7 +608,7 @@
             this.lblUserMyAudio.AutoSize = true;
             this.lblUserMyAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserMyAudio.ForeColor = System.Drawing.Color.White;
-            this.lblUserMyAudio.Location = new System.Drawing.Point(581, 114);
+            this.lblUserMyAudio.Location = new System.Drawing.Point(619, 40);
             this.lblUserMyAudio.Name = "lblUserMyAudio";
             this.lblUserMyAudio.Size = new System.Drawing.Size(193, 42);
             this.lblUserMyAudio.TabIndex = 5;
@@ -615,10 +624,10 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Location = new System.Drawing.Point(581, 165);
+            this.panel3.Location = new System.Drawing.Point(626, 92);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(665, 385);
+            this.panel3.Size = new System.Drawing.Size(605, 403);
             this.panel3.TabIndex = 4;
             // 
             // panel10
@@ -631,10 +640,10 @@
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.button27);
             this.panel10.Controls.Add(this.button28);
-            this.panel10.Location = new System.Drawing.Point(20, 285);
+            this.panel10.Location = new System.Drawing.Point(20, 288);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(625, 50);
+            this.panel10.Size = new System.Drawing.Size(562, 50);
             this.panel10.TabIndex = 7;
             // 
             // button23
@@ -648,7 +657,7 @@
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(534, 5);
+            this.button24.Location = new System.Drawing.Point(458, 7);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(69, 38);
             this.button24.TabIndex = 9;
@@ -657,7 +666,7 @@
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(460, 5);
+            this.button25.Location = new System.Drawing.Point(384, 7);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(69, 38);
             this.button25.TabIndex = 8;
@@ -666,7 +675,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(386, 5);
+            this.button26.Location = new System.Drawing.Point(310, 7);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(69, 38);
             this.button26.TabIndex = 7;
@@ -676,7 +685,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Yellow;
-            this.panel11.Location = new System.Drawing.Point(609, 5);
+            this.panel11.Location = new System.Drawing.Point(533, 7);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(10, 38);
             this.panel11.TabIndex = 6;
@@ -706,7 +715,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(13, 238);
+            this.label8.Location = new System.Drawing.Point(13, 241);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(204, 38);
@@ -716,7 +725,6 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DarkGray;
-            this.panel8.Controls.Add(this.button13);
             this.panel8.Controls.Add(this.button14);
             this.panel8.Controls.Add(this.button15);
             this.panel8.Controls.Add(this.button16);
@@ -725,20 +733,11 @@
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.button19);
             this.panel8.Controls.Add(this.button20);
-            this.panel8.Location = new System.Drawing.Point(19, 167);
+            this.panel8.Location = new System.Drawing.Point(19, 170);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(625, 50);
+            this.panel8.Size = new System.Drawing.Size(562, 50);
             this.panel8.TabIndex = 5;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(260, 6);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(116, 37);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "Remind_3.wav";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
@@ -760,7 +759,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(534, 5);
+            this.button16.Location = new System.Drawing.Point(459, 7);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(69, 38);
             this.button16.TabIndex = 9;
@@ -769,7 +768,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(460, 5);
+            this.button17.Location = new System.Drawing.Point(385, 7);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(69, 38);
             this.button17.TabIndex = 8;
@@ -778,7 +777,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(386, 5);
+            this.button18.Location = new System.Drawing.Point(311, 7);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(69, 38);
             this.button18.TabIndex = 7;
@@ -788,7 +787,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Green;
-            this.panel9.Location = new System.Drawing.Point(609, 5);
+            this.panel9.Location = new System.Drawing.Point(534, 7);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(10, 38);
             this.panel9.TabIndex = 6;
@@ -818,7 +817,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(13, 123);
+            this.label5.Location = new System.Drawing.Point(13, 126);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(259, 38);
@@ -830,7 +829,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 13);
+            this.label4.Location = new System.Drawing.Point(13, 16);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(254, 38);
@@ -840,7 +839,6 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGray;
-            this.panel6.Controls.Add(this.button12);
             this.panel6.Controls.Add(this.button11);
             this.panel6.Controls.Add(this.button10);
             this.panel6.Controls.Add(this.button9);
@@ -849,20 +847,11 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.button5);
             this.panel6.Controls.Add(this.button6);
-            this.panel6.Location = new System.Drawing.Point(20, 64);
+            this.panel6.Location = new System.Drawing.Point(20, 67);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(625, 50);
+            this.panel6.Size = new System.Drawing.Size(562, 50);
             this.panel6.TabIndex = 2;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(260, 6);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(116, 37);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "Greeting_3.wav";
-            this.button12.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
@@ -884,7 +873,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(534, 5);
+            this.button9.Location = new System.Drawing.Point(458, 7);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(69, 38);
             this.button9.TabIndex = 9;
@@ -893,7 +882,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(460, 5);
+            this.button8.Location = new System.Drawing.Point(384, 7);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(69, 38);
             this.button8.TabIndex = 8;
@@ -902,7 +891,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(386, 5);
+            this.button7.Location = new System.Drawing.Point(310, 7);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(69, 38);
             this.button7.TabIndex = 7;
@@ -912,7 +901,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Green;
-            this.panel7.Location = new System.Drawing.Point(609, 5);
+            this.panel7.Location = new System.Drawing.Point(533, 7);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(10, 38);
             this.panel7.TabIndex = 6;
@@ -941,7 +930,7 @@
             // 
             this.btnUserNewConnection.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnUserNewConnection.ForeColor = System.Drawing.Color.White;
-            this.btnUserNewConnection.Location = new System.Drawing.Point(340, 123);
+            this.btnUserNewConnection.Location = new System.Drawing.Point(392, 530);
             this.btnUserNewConnection.Name = "btnUserNewConnection";
             this.btnUserNewConnection.Size = new System.Drawing.Size(202, 36);
             this.btnUserNewConnection.TabIndex = 3;
@@ -954,7 +943,7 @@
             this.lblUserMyConnections.AutoSize = true;
             this.lblUserMyConnections.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserMyConnections.ForeColor = System.Drawing.Color.White;
-            this.lblUserMyConnections.Location = new System.Drawing.Point(22, 117);
+            this.lblUserMyConnections.Location = new System.Drawing.Point(16, 524);
             this.lblUserMyConnections.Name = "lblUserMyConnections";
             this.lblUserMyConnections.Size = new System.Drawing.Size(312, 42);
             this.lblUserMyConnections.TabIndex = 2;
@@ -963,13 +952,13 @@
             // lblMyDNAHead
             // 
             this.lblMyDNAHead.AutoSize = true;
-            this.lblMyDNAHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMyDNAHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDNAHead.ForeColor = System.Drawing.Color.White;
-            this.lblMyDNAHead.Location = new System.Drawing.Point(30, 26);
+            this.lblMyDNAHead.Location = new System.Drawing.Point(18, 21);
             this.lblMyDNAHead.Name = "lblMyDNAHead";
-            this.lblMyDNAHead.Size = new System.Drawing.Size(805, 54);
+            this.lblMyDNAHead.Size = new System.Drawing.Size(276, 69);
             this.lblMyDNAHead.TabIndex = 0;
-            this.lblMyDNAHead.Text = "My DNA - Saturday October 9, 2021";
+            this.lblMyDNAHead.Text = "My DNA:";
             // 
             // pnlUserCreateNewConnection
             // 
@@ -987,16 +976,16 @@
             this.pnlUserCreateNewConnection.Controls.Add(this.label1);
             this.pnlUserCreateNewConnection.Controls.Add(this.txtUserCreateNewConnectionUsername);
             this.pnlUserCreateNewConnection.Controls.Add(this.lblUserCreateNewConnectionUsername);
-            this.pnlUserCreateNewConnection.Location = new System.Drawing.Point(19, 168);
+            this.pnlUserCreateNewConnection.Location = new System.Drawing.Point(13, 575);
             this.pnlUserCreateNewConnection.Name = "pnlUserCreateNewConnection";
-            this.pnlUserCreateNewConnection.Size = new System.Drawing.Size(523, 387);
+            this.pnlUserCreateNewConnection.Size = new System.Drawing.Size(581, 387);
             this.pnlUserCreateNewConnection.TabIndex = 8;
             // 
             // btnUserCreateNewConnectionCancel
             // 
             this.btnUserCreateNewConnectionCancel.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnUserCreateNewConnectionCancel.ForeColor = System.Drawing.Color.White;
-            this.btnUserCreateNewConnectionCancel.Location = new System.Drawing.Point(20, 313);
+            this.btnUserCreateNewConnectionCancel.Location = new System.Drawing.Point(133, 303);
             this.btnUserCreateNewConnectionCancel.Name = "btnUserCreateNewConnectionCancel";
             this.btnUserCreateNewConnectionCancel.Size = new System.Drawing.Size(202, 49);
             this.btnUserCreateNewConnectionCancel.TabIndex = 12;
@@ -1008,7 +997,7 @@
             // 
             this.btnUserCreateNewConnectionAddNewConnection.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnUserCreateNewConnectionAddNewConnection.ForeColor = System.Drawing.Color.White;
-            this.btnUserCreateNewConnectionAddNewConnection.Location = new System.Drawing.Point(300, 313);
+            this.btnUserCreateNewConnectionAddNewConnection.Location = new System.Drawing.Point(357, 303);
             this.btnUserCreateNewConnectionAddNewConnection.Name = "btnUserCreateNewConnectionAddNewConnection";
             this.btnUserCreateNewConnectionAddNewConnection.Size = new System.Drawing.Size(202, 49);
             this.btnUserCreateNewConnectionAddNewConnection.TabIndex = 11;
@@ -1021,7 +1010,7 @@
             this.txtUserCreateNewConnectionAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserCreateNewConnectionAddress.Location = new System.Drawing.Point(174, 236);
             this.txtUserCreateNewConnectionAddress.Name = "txtUserCreateNewConnectionAddress";
-            this.txtUserCreateNewConnectionAddress.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionAddress.Size = new System.Drawing.Size(385, 38);
             this.txtUserCreateNewConnectionAddress.TabIndex = 10;
             this.txtUserCreateNewConnectionAddress.Text = "2366 W clifton ave";
             // 
@@ -1042,7 +1031,7 @@
             this.txtUserCreateNewConnectionAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserCreateNewConnectionAge.Location = new System.Drawing.Point(173, 181);
             this.txtUserCreateNewConnectionAge.Name = "txtUserCreateNewConnectionAge";
-            this.txtUserCreateNewConnectionAge.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionAge.Size = new System.Drawing.Size(385, 38);
             this.txtUserCreateNewConnectionAge.TabIndex = 8;
             this.txtUserCreateNewConnectionAge.Text = "87";
             // 
@@ -1063,7 +1052,7 @@
             this.txtUserCreateNewConnectionLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserCreateNewConnectionLastname.Location = new System.Drawing.Point(173, 130);
             this.txtUserCreateNewConnectionLastname.Name = "txtUserCreateNewConnectionLastname";
-            this.txtUserCreateNewConnectionLastname.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionLastname.Size = new System.Drawing.Size(385, 38);
             this.txtUserCreateNewConnectionLastname.TabIndex = 6;
             this.txtUserCreateNewConnectionLastname.Text = "Doe";
             // 
@@ -1084,7 +1073,7 @@
             this.txtUserCreateNewConnectionFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserCreateNewConnectionFirstname.Location = new System.Drawing.Point(173, 77);
             this.txtUserCreateNewConnectionFirstname.Name = "txtUserCreateNewConnectionFirstname";
-            this.txtUserCreateNewConnectionFirstname.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionFirstname.Size = new System.Drawing.Size(385, 38);
             this.txtUserCreateNewConnectionFirstname.TabIndex = 4;
             this.txtUserCreateNewConnectionFirstname.Text = "Jane";
             // 
@@ -1105,7 +1094,7 @@
             this.txtUserCreateNewConnectionUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserCreateNewConnectionUsername.Location = new System.Drawing.Point(173, 24);
             this.txtUserCreateNewConnectionUsername.Name = "txtUserCreateNewConnectionUsername";
-            this.txtUserCreateNewConnectionUsername.Size = new System.Drawing.Size(328, 38);
+            this.txtUserCreateNewConnectionUsername.Size = new System.Drawing.Size(385, 38);
             this.txtUserCreateNewConnectionUsername.TabIndex = 2;
             this.txtUserCreateNewConnectionUsername.Text = "JaneD123";
             // 
@@ -1126,11 +1115,108 @@
             this.pnlUserMyConnections.AutoScroll = true;
             this.pnlUserMyConnections.BackColor = System.Drawing.Color.MidnightBlue;
             this.pnlUserMyConnections.ForeColor = System.Drawing.Color.Black;
-            this.pnlUserMyConnections.Location = new System.Drawing.Point(22, 168);
+            this.pnlUserMyConnections.Location = new System.Drawing.Point(16, 575);
             this.pnlUserMyConnections.Name = "pnlUserMyConnections";
             this.pnlUserMyConnections.Padding = new System.Windows.Forms.Padding(20);
-            this.pnlUserMyConnections.Size = new System.Drawing.Size(520, 385);
+            this.pnlUserMyConnections.Size = new System.Drawing.Size(578, 385);
             this.pnlUserMyConnections.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(23, 92);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(571, 403);
+            this.panel1.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(18, 300);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(253, 38);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Last Name: Doe";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(18, 253);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(347, 38);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "First Name: Johnathon";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(11, 197);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(414, 52);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Username: User123";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 160);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(18, 347);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(503, 29);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Address: 123 nothreal st, Cincinnati Ohio 4521";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(347, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 36);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Edit Profile Picture";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(347, 75);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 36);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Edit Profile Information";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // frmWelcomeUser
             // 
@@ -1175,6 +1261,9 @@
             this.panel6.ResumeLayout(false);
             this.pnlUserCreateNewConnection.ResumeLayout(false);
             this.pnlUserCreateNewConnection.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1235,7 +1324,6 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
@@ -1247,7 +1335,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
@@ -1270,6 +1357,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnUserCreateNewConnectionCancel;
         private System.Windows.Forms.Button btnUserCreateNewConnectionAddNewConnection;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
