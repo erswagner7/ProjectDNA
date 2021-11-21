@@ -33,7 +33,6 @@
             this.btnMyDay = new System.Windows.Forms.Button();
             this.btnChatsView = new System.Windows.Forms.Button();
             this.btnMyDNA = new System.Windows.Forms.Button();
-            this.lblWelcome = new System.Windows.Forms.Label();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.lblUserClock = new System.Windows.Forms.Label();
             this.pnlUserWelcome = new System.Windows.Forms.Panel();
@@ -110,16 +109,6 @@
             this.btnMyDNA.UseVisualStyleBackColor = false;
             this.btnMyDNA.Click += new System.EventHandler(this.btnMyDNA_Click);
             // 
-            // lblWelcome
-            // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(25, 20);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 13);
-            this.lblWelcome.TabIndex = 1;
-            this.lblWelcome.Click += new System.EventHandler(this.Label1_Click);
-            // 
             // lblUserWelcome
             // 
             this.lblUserWelcome.AutoSize = true;
@@ -145,7 +134,6 @@
             this.lblUserClock.Size = new System.Drawing.Size(126, 31);
             this.lblUserClock.TabIndex = 3;
             this.lblUserClock.Text = "00:00 am";
-            this.lblUserClock.Click += new System.EventHandler(this.LblUserClock_Click);
             // 
             // pnlUserWelcome
             // 
@@ -175,7 +163,6 @@
             this.ClientSize = new System.Drawing.Size(1186, 612);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.pnlUserWelcome);
-            this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.pnlNavigation);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmWelcomeUser";
@@ -185,14 +172,12 @@
             this.pnlUserWelcome.ResumeLayout(false);
             this.pnlUserWelcome.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel pnlNavigation;
-        private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnMyDay;
         private System.Windows.Forms.Label lblUserWelcome;
         private System.Windows.Forms.Label lblUserClock;

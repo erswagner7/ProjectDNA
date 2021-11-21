@@ -22,13 +22,7 @@ namespace PrototypeDNA
             this.pContainer.Controls.Add(myDay);
             myDay.Show();
 
-            /*
-            pnlUserMyDNA.Hide();
-
             lblUserWelcome.Text = "Welcome User, today is " + DateTime.Now.ToLongDateString();
-            lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
-            lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString();
-        */
         }
         System.Windows.Forms.Timer tmr = null;
         private void StartTimer()
@@ -42,23 +36,7 @@ namespace PrototypeDNA
         {
             lblUserClock.Text = DateTime.Now.ToLongTimeString();
         }
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblUserClock_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void pnlUserMyDay_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+      
         private void btnChatsView_Click(object sender, EventArgs e)
         {
             this.pContainer.Controls.Clear();

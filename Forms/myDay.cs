@@ -15,6 +15,8 @@ namespace PrototypeDNA.Forms
         public myDay()
         {
             InitializeComponent();
+
+            lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
         }
 
         private void BtnTaken1_Click(object sender, EventArgs e)
