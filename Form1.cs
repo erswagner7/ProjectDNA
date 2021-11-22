@@ -50,19 +50,13 @@ namespace PrototypeDNA
 
         private void BtnTaken1_Click(object sender, EventArgs e)
         {
-            pnlMedicationStatus1.BackColor = Color.Green;
-            lblMyDayMedicationTodayList1.ForeColor = Color.Green;
-            btnNotTaken1.Hide();
-            btnTaken1.Hide();
+
 
         }
 
         private void BtnTaken2_Click(object sender, EventArgs e)
         {
-            pnlMedicationStatus2.BackColor = Color.Green;
-            lblMyDayMedicationTodayList2.ForeColor = Color.Green;
-            btnNotTaken2.Hide();
-            btnTaken2.Hide();
+
         }
 
         private void pnlUserMyDay_Paint(object sender, PaintEventArgs e)
@@ -92,6 +86,12 @@ namespace PrototypeDNA
         {
             pnlUserMyDay.Hide();
             pnlUserMyDNA.Show();
+
+            //fix for spacing styling
+            pnlUserMyConnections.Hide();
+            pnlUserCreateNewConnection.Show();
+            pnlUserMyConnections.Show();
+            pnlUserCreateNewConnection.Hide();
 
             btnMyDay.ForeColor = Color.Black;
             btnMyDay.BackColor = Color.BlueViolet;
@@ -155,13 +155,13 @@ namespace PrototypeDNA
             String newPatientName = txtUserCreateNewConnectionUsername.Text;
             Patient patient = new Patient(txtUserCreateNewConnectionUsername.Text, txtUserCreateNewConnectionFirstname.Text, txtUserCreateNewConnectionLastname.Text, Convert.ToInt32(txtUserCreateNewConnectionAge.Text), txtUserCreateNewConnectionAddress.Text);
 
-            FlowLayoutPanel newPanel = new FlowLayoutPanel();
-            newPanel.Height = 147;
-            newPanel.Width = (pnlUserMyConnections.Width - 40);
-            newPanel.AutoScroll = true;
-            newPanel.FlowDirection = FlowDirection.TopDown;
-            newPanel.BackColor = Color.DarkGray;
-            pnlUserMyConnections.Controls.Add(newPanel);
+            FlowLayoutPanel pnlUserNewConnections = new FlowLayoutPanel();
+            pnlUserNewConnections.Height = 147;
+            pnlUserNewConnections.Width = (pnlUserMyConnections.Width - 40);
+            pnlUserNewConnections.AutoScroll = true;
+            pnlUserNewConnections.FlowDirection = FlowDirection.TopDown;
+            pnlUserNewConnections.BackColor = Color.DarkGray;
+            pnlUserMyConnections.Controls.Add(pnlUserNewConnections);
 
             Label lblUserNewConnectionName = new Label();
             lblUserNewConnectionName.Text = "Name: " + txtUserCreateNewConnectionFirstname.Text + " " + txtUserCreateNewConnectionLastname.Text;
@@ -169,7 +169,7 @@ namespace PrototypeDNA
             lblUserNewConnectionName.Margin = new Padding(7);
             lblUserNewConnectionName.ForeColor = Color.White;
             lblUserNewConnectionName.AutoSize = true;
-            newPanel.Controls.Add(lblUserNewConnectionName);
+            pnlUserNewConnections.Controls.Add(lblUserNewConnectionName);
 
             Label lblUserNewConnectionAge = new Label();
             lblUserNewConnectionAge.Text = "Age: " + Convert.ToInt32(txtUserCreateNewConnectionAge.Text);
@@ -177,7 +177,7 @@ namespace PrototypeDNA
             lblUserNewConnectionAge.Margin = new Padding(7);
             lblUserNewConnectionAge.ForeColor = Color.White;
             lblUserNewConnectionAge.AutoSize = true;
-            newPanel.Controls.Add(lblUserNewConnectionAge);
+            pnlUserNewConnections.Controls.Add(lblUserNewConnectionAge);
             
             Label lblUserNewConnectionAddress = new Label();
             lblUserNewConnectionAddress.Text = "Address: " + txtUserCreateNewConnectionAddress.Text;
@@ -185,7 +185,10 @@ namespace PrototypeDNA
             lblUserNewConnectionAddress.Margin = new Padding(7);
             lblUserNewConnectionAddress.ForeColor = Color.White;
             lblUserNewConnectionAddress.AutoSize = true;
-            newPanel.Controls.Add(lblUserNewConnectionAddress);
+            pnlUserNewConnections.Controls.Add(lblUserNewConnectionAddress);
+
+            cbUserSelectConnection.Items.Add(txtUserCreateNewConnectionFirstname.Text + " " + txtUserCreateNewConnectionLastname.Text);
+
 
 
             txtUserCreateNewConnectionUsername.Text = "";
@@ -194,6 +197,7 @@ namespace PrototypeDNA
             txtUserCreateNewConnectionAge.Text = "";
             txtUserCreateNewConnectionAddress.Text = "";
         }
+
 
         private void btnUserCreateNewConnectionCancel_Click(object sender, EventArgs e)
         {
@@ -210,6 +214,48 @@ namespace PrototypeDNA
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUserAddMedication_Click(object sender, EventArgs e)
+        {
+            Panel pnlUserMyDayNewMedication = new Panel();
+            pnlUserMyDayNewMedication.Height = 40;
+            pnlUserMyDayNewMedication.Width = (pnlUserMyDayMedications.Width - 40);
+            pnlUserMyDayNewMedication.Margin = new Padding(7);
+            pnlUserMyDayNewMedication.BackColor = Color.DarkGray;
+            pnlUserMyDayMedications.Controls.Add(pnlUserMyDayNewMedication);
+
+            Label lblUserMyDayNewMedicationName = new Label();
+            lblUserMyDayNewMedicationName.Text = "Medication: " + txtUserEnterMedicationName.Text;
+            lblUserMyDayNewMedicationName.Location = new Point(5, 5);
+            lblUserMyDayNewMedicationName.Font = new Font(FontFamily.GenericSansSerif, 16);
+            lblUserMyDayNewMedicationName.Margin = new Padding(7);
+            lblUserMyDayNewMedicationName.ForeColor = Color.White;
+            lblUserMyDayNewMedicationName.AutoSize = true;
+            pnlUserMyDayNewMedication.Controls.Add(lblUserMyDayNewMedicationName);
+
+            Label pnlUserMyDayNewMedicationDate = new Label();
+            pnlUserMyDayNewMedicationDate.Text = "Date: Today";
+            pnlUserMyDayNewMedicationDate.Location = new Point(pnlUserMyDayNewMedication.Width - 250, 5);
+            pnlUserMyDayNewMedicationDate.Font = new Font(FontFamily.GenericSansSerif, 16);
+            pnlUserMyDayNewMedicationDate.Margin = new Padding(7);
+            pnlUserMyDayNewMedicationDate.ForeColor = Color.White;
+            pnlUserMyDayNewMedicationDate.AutoSize = true;
+            pnlUserMyDayNewMedication.Controls.Add(pnlUserMyDayNewMedicationDate);
+
+            pnlUserMyDayTakenIndicator.BackColor = Color.Yellow;
+
+            txtUserEnterMedicationName.Text = "";
+        }
+
+        private void btnUserMyDayTaken_Click(object sender, EventArgs e)
+        {
+            pnlUserMyDayTakenIndicator.BackColor = Color.LightGreen;
+        }
+
+        private void btnUserMyDayNotTaken_Click(object sender, EventArgs e)
+        {
+            pnlUserMyDayTakenIndicator.BackColor = Color.Crimson;
         }
     }
 }

@@ -46,25 +46,24 @@
             this.lblMyDayRemindersUpcoming = new System.Windows.Forms.Label();
             this.lblMyDayRemindersToday = new System.Windows.Forms.Label();
             this.lblMyDayMedication = new System.Windows.Forms.Label();
-            this.pnlMyDayMedications = new System.Windows.Forms.Panel();
-            this.pnlMedicationStatus1 = new System.Windows.Forms.Panel();
-            this.pnlMyDayMedicationUpcomingList2 = new System.Windows.Forms.Panel();
-            this.lblMyDayMedicationUpcomingList2 = new System.Windows.Forms.Label();
-            this.pnlMyDayMedicationUpcomingList1 = new System.Windows.Forms.Panel();
-            this.lblMyDayMedicationUpcomingList1 = new System.Windows.Forms.Label();
-            this.lblMyDayMedicationUpcoming = new System.Windows.Forms.Label();
-            this.pnlMyDayMedicationTodayList2 = new System.Windows.Forms.Panel();
-            this.pnlMedicationStatus2 = new System.Windows.Forms.Panel();
-            this.btnNotTaken2 = new System.Windows.Forms.Button();
-            this.btnTaken2 = new System.Windows.Forms.Button();
-            this.lblMyDayMedicationTodayList2 = new System.Windows.Forms.Label();
-            this.pnlMyDayMedicationTodayList1 = new System.Windows.Forms.Panel();
-            this.btnTaken1 = new System.Windows.Forms.Button();
-            this.btnNotTaken1 = new System.Windows.Forms.Button();
-            this.lblMyDayMedicationTodayList1 = new System.Windows.Forms.Label();
-            this.lblMyDayMedicationToday = new System.Windows.Forms.Label();
             this.lblMyDayHead = new System.Windows.Forms.Label();
             this.pnlUserMyDNA = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUserAddNewMedication = new System.Windows.Forms.Button();
+            this.txtUserEnterMedicationName = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.cbUserSelectConnection = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnUserMyAudio = new System.Windows.Forms.Button();
             this.lblUserMyAudio = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -114,32 +113,26 @@
             this.txtUserCreateNewConnectionUsername = new System.Windows.Forms.TextBox();
             this.lblUserCreateNewConnectionUsername = new System.Windows.Forms.Label();
             this.pnlUserMyConnections = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pnlUserMyDayMedications = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnUserMyDayNotTaken = new System.Windows.Forms.Button();
+            this.btnUserMyDayTaken = new System.Windows.Forms.Button();
+            this.pnlUserMyDayTakenIndicator = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pnlNavigation.SuspendLayout();
             this.pnlUserWelcome.SuspendLayout();
             this.pnlUserMyDay.SuspendLayout();
             this.pnlMyDayReminders.SuspendLayout();
             this.pnlMyDayRemindersUpcomingList1.SuspendLayout();
-            this.pnlMyDayMedications.SuspendLayout();
-            this.pnlMyDayMedicationUpcomingList2.SuspendLayout();
-            this.pnlMyDayMedicationUpcomingList1.SuspendLayout();
-            this.pnlMyDayMedicationTodayList2.SuspendLayout();
-            this.pnlMyDayMedicationTodayList1.SuspendLayout();
             this.pnlUserMyDNA.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pnlUserCreateNewConnection.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNavigation
@@ -263,11 +256,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlUserMyDay.AutoScroll = true;
             this.pnlUserMyDay.BackColor = System.Drawing.Color.BlueViolet;
+            this.pnlUserMyDay.Controls.Add(this.btnUserMyDayTaken);
+            this.pnlUserMyDay.Controls.Add(this.btnUserMyDayNotTaken);
+            this.pnlUserMyDay.Controls.Add(this.pnlUserMyDayMedications);
             this.pnlUserMyDay.Controls.Add(this.lblMyDayReminders);
             this.pnlUserMyDay.Controls.Add(this.pnlMyDayReminders);
             this.pnlUserMyDay.Controls.Add(this.lblMyDayMedication);
-            this.pnlUserMyDay.Controls.Add(this.pnlMyDayMedications);
             this.pnlUserMyDay.Controls.Add(this.lblMyDayHead);
+            this.pnlUserMyDay.Controls.Add(this.pnlUserMyDayTakenIndicator);
+            this.pnlUserMyDay.Controls.Add(this.panel5);
             this.pnlUserMyDay.Location = new System.Drawing.Point(271, 175);
             this.pnlUserMyDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlUserMyDay.Name = "pnlUserMyDay";
@@ -359,212 +356,20 @@
             // lblMyDayMedication
             // 
             this.lblMyDayMedication.AutoSize = true;
-            this.lblMyDayMedication.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMyDayMedication.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayMedication.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedication.Location = new System.Drawing.Point(30, 114);
+            this.lblMyDayMedication.Location = new System.Drawing.Point(22, 92);
             this.lblMyDayMedication.Name = "lblMyDayMedication";
-            this.lblMyDayMedication.Size = new System.Drawing.Size(240, 42);
+            this.lblMyDayMedication.Size = new System.Drawing.Size(406, 46);
             this.lblMyDayMedication.TabIndex = 2;
-            this.lblMyDayMedication.Text = "Medications:";
-            // 
-            // pnlMyDayMedications
-            // 
-            this.pnlMyDayMedications.BackColor = System.Drawing.Color.MidnightBlue;
-            this.pnlMyDayMedications.Controls.Add(this.pnlMedicationStatus1);
-            this.pnlMyDayMedications.Controls.Add(this.pnlMyDayMedicationUpcomingList2);
-            this.pnlMyDayMedications.Controls.Add(this.pnlMyDayMedicationUpcomingList1);
-            this.pnlMyDayMedications.Controls.Add(this.lblMyDayMedicationUpcoming);
-            this.pnlMyDayMedications.Controls.Add(this.pnlMyDayMedicationTodayList2);
-            this.pnlMyDayMedications.Controls.Add(this.pnlMyDayMedicationTodayList1);
-            this.pnlMyDayMedications.Controls.Add(this.lblMyDayMedicationToday);
-            this.pnlMyDayMedications.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlMyDayMedications.Location = new System.Drawing.Point(30, 165);
-            this.pnlMyDayMedications.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlMyDayMedications.Name = "pnlMyDayMedications";
-            this.pnlMyDayMedications.Size = new System.Drawing.Size(1190, 375);
-            this.pnlMyDayMedications.TabIndex = 1;
-            // 
-            // pnlMedicationStatus1
-            // 
-            this.pnlMedicationStatus1.BackColor = System.Drawing.Color.Maroon;
-            this.pnlMedicationStatus1.Location = new System.Drawing.Point(1123, 65);
-            this.pnlMedicationStatus1.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMedicationStatus1.Name = "pnlMedicationStatus1";
-            this.pnlMedicationStatus1.Size = new System.Drawing.Size(40, 40);
-            this.pnlMedicationStatus1.TabIndex = 4;
-            // 
-            // pnlMyDayMedicationUpcomingList2
-            // 
-            this.pnlMyDayMedicationUpcomingList2.BackColor = System.Drawing.Color.DarkGray;
-            this.pnlMyDayMedicationUpcomingList2.Controls.Add(this.lblMyDayMedicationUpcomingList2);
-            this.pnlMyDayMedicationUpcomingList2.Location = new System.Drawing.Point(20, 313);
-            this.pnlMyDayMedicationUpcomingList2.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMyDayMedicationUpcomingList2.Name = "pnlMyDayMedicationUpcomingList2";
-            this.pnlMyDayMedicationUpcomingList2.Size = new System.Drawing.Size(1150, 49);
-            this.pnlMyDayMedicationUpcomingList2.TabIndex = 2;
-            // 
-            // lblMyDayMedicationUpcomingList2
-            // 
-            this.lblMyDayMedicationUpcomingList2.AutoSize = true;
-            this.lblMyDayMedicationUpcomingList2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyDayMedicationUpcomingList2.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationUpcomingList2.Location = new System.Drawing.Point(9, 7);
-            this.lblMyDayMedicationUpcomingList2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMyDayMedicationUpcomingList2.Name = "lblMyDayMedicationUpcomingList2";
-            this.lblMyDayMedicationUpcomingList2.Size = new System.Drawing.Size(193, 36);
-            this.lblMyDayMedicationUpcomingList2.TabIndex = 2;
-            this.lblMyDayMedicationUpcomingList2.Text = "Rivastigmine:";
-            // 
-            // pnlMyDayMedicationUpcomingList1
-            // 
-            this.pnlMyDayMedicationUpcomingList1.BackColor = System.Drawing.Color.DarkGray;
-            this.pnlMyDayMedicationUpcomingList1.Controls.Add(this.lblMyDayMedicationUpcomingList1);
-            this.pnlMyDayMedicationUpcomingList1.Location = new System.Drawing.Point(20, 241);
-            this.pnlMyDayMedicationUpcomingList1.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMyDayMedicationUpcomingList1.Name = "pnlMyDayMedicationUpcomingList1";
-            this.pnlMyDayMedicationUpcomingList1.Size = new System.Drawing.Size(1150, 49);
-            this.pnlMyDayMedicationUpcomingList1.TabIndex = 2;
-            // 
-            // lblMyDayMedicationUpcomingList1
-            // 
-            this.lblMyDayMedicationUpcomingList1.AutoSize = true;
-            this.lblMyDayMedicationUpcomingList1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyDayMedicationUpcomingList1.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationUpcomingList1.Location = new System.Drawing.Point(9, 7);
-            this.lblMyDayMedicationUpcomingList1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMyDayMedicationUpcomingList1.Name = "lblMyDayMedicationUpcomingList1";
-            this.lblMyDayMedicationUpcomingList1.Size = new System.Drawing.Size(168, 36);
-            this.lblMyDayMedicationUpcomingList1.TabIndex = 1;
-            this.lblMyDayMedicationUpcomingList1.Text = "Memantine:";
-            // 
-            // lblMyDayMedicationUpcoming
-            // 
-            this.lblMyDayMedicationUpcoming.AutoSize = true;
-            this.lblMyDayMedicationUpcoming.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyDayMedicationUpcoming.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationUpcoming.Location = new System.Drawing.Point(20, 196);
-            this.lblMyDayMedicationUpcoming.Name = "lblMyDayMedicationUpcoming";
-            this.lblMyDayMedicationUpcoming.Size = new System.Drawing.Size(214, 36);
-            this.lblMyDayMedicationUpcoming.TabIndex = 3;
-            this.lblMyDayMedicationUpcoming.Text = "  Upcoming      ";
-            // 
-            // pnlMyDayMedicationTodayList2
-            // 
-            this.pnlMyDayMedicationTodayList2.BackColor = System.Drawing.Color.DarkGray;
-            this.pnlMyDayMedicationTodayList2.Controls.Add(this.pnlMedicationStatus2);
-            this.pnlMyDayMedicationTodayList2.Controls.Add(this.btnNotTaken2);
-            this.pnlMyDayMedicationTodayList2.Controls.Add(this.btnTaken2);
-            this.pnlMyDayMedicationTodayList2.Controls.Add(this.lblMyDayMedicationTodayList2);
-            this.pnlMyDayMedicationTodayList2.Location = new System.Drawing.Point(20, 132);
-            this.pnlMyDayMedicationTodayList2.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMyDayMedicationTodayList2.Name = "pnlMyDayMedicationTodayList2";
-            this.pnlMyDayMedicationTodayList2.Size = new System.Drawing.Size(1150, 50);
-            this.pnlMyDayMedicationTodayList2.TabIndex = 2;
-            // 
-            // pnlMedicationStatus2
-            // 
-            this.pnlMedicationStatus2.BackColor = System.Drawing.Color.Maroon;
-            this.pnlMedicationStatus2.Location = new System.Drawing.Point(1103, 5);
-            this.pnlMedicationStatus2.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMedicationStatus2.Name = "pnlMedicationStatus2";
-            this.pnlMedicationStatus2.Size = new System.Drawing.Size(40, 40);
-            this.pnlMedicationStatus2.TabIndex = 3;
-            // 
-            // btnNotTaken2
-            // 
-            this.btnNotTaken2.Location = new System.Drawing.Point(685, 7);
-            this.btnNotTaken2.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNotTaken2.Name = "btnNotTaken2";
-            this.btnNotTaken2.Size = new System.Drawing.Size(203, 36);
-            this.btnNotTaken2.TabIndex = 3;
-            this.btnNotTaken2.Text = "Report Not Taken";
-            this.btnNotTaken2.UseVisualStyleBackColor = true;
-            // 
-            // btnTaken2
-            // 
-            this.btnTaken2.Location = new System.Drawing.Point(895, 7);
-            this.btnTaken2.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTaken2.Name = "btnTaken2";
-            this.btnTaken2.Size = new System.Drawing.Size(203, 36);
-            this.btnTaken2.TabIndex = 3;
-            this.btnTaken2.Text = "Report Taken";
-            this.btnTaken2.UseVisualStyleBackColor = true;
-            this.btnTaken2.Click += new System.EventHandler(this.BtnTaken2_Click);
-            // 
-            // lblMyDayMedicationTodayList2
-            // 
-            this.lblMyDayMedicationTodayList2.AutoSize = true;
-            this.lblMyDayMedicationTodayList2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyDayMedicationTodayList2.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationTodayList2.Location = new System.Drawing.Point(9, 4);
-            this.lblMyDayMedicationTodayList2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMyDayMedicationTodayList2.Name = "lblMyDayMedicationTodayList2";
-            this.lblMyDayMedicationTodayList2.Size = new System.Drawing.Size(193, 36);
-            this.lblMyDayMedicationTodayList2.TabIndex = 1;
-            this.lblMyDayMedicationTodayList2.Text = "Rivastigmine:";
-            // 
-            // pnlMyDayMedicationTodayList1
-            // 
-            this.pnlMyDayMedicationTodayList1.BackColor = System.Drawing.Color.DarkGray;
-            this.pnlMyDayMedicationTodayList1.Controls.Add(this.btnTaken1);
-            this.pnlMyDayMedicationTodayList1.Controls.Add(this.btnNotTaken1);
-            this.pnlMyDayMedicationTodayList1.Controls.Add(this.lblMyDayMedicationTodayList1);
-            this.pnlMyDayMedicationTodayList1.Location = new System.Drawing.Point(20, 60);
-            this.pnlMyDayMedicationTodayList1.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMyDayMedicationTodayList1.Name = "pnlMyDayMedicationTodayList1";
-            this.pnlMyDayMedicationTodayList1.Size = new System.Drawing.Size(1150, 50);
-            this.pnlMyDayMedicationTodayList1.TabIndex = 1;
-            // 
-            // btnTaken1
-            // 
-            this.btnTaken1.Location = new System.Drawing.Point(895, 7);
-            this.btnTaken1.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTaken1.Name = "btnTaken1";
-            this.btnTaken1.Size = new System.Drawing.Size(203, 36);
-            this.btnTaken1.TabIndex = 2;
-            this.btnTaken1.Text = "Report Taken";
-            this.btnTaken1.UseVisualStyleBackColor = true;
-            this.btnTaken1.Click += new System.EventHandler(this.BtnTaken1_Click);
-            // 
-            // btnNotTaken1
-            // 
-            this.btnNotTaken1.Location = new System.Drawing.Point(687, 7);
-            this.btnNotTaken1.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNotTaken1.Name = "btnNotTaken1";
-            this.btnNotTaken1.Size = new System.Drawing.Size(203, 36);
-            this.btnNotTaken1.TabIndex = 1;
-            this.btnNotTaken1.Text = "Report Not Taken";
-            this.btnNotTaken1.UseVisualStyleBackColor = true;
-            // 
-            // lblMyDayMedicationTodayList1
-            // 
-            this.lblMyDayMedicationTodayList1.AutoSize = true;
-            this.lblMyDayMedicationTodayList1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyDayMedicationTodayList1.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationTodayList1.Location = new System.Drawing.Point(9, 6);
-            this.lblMyDayMedicationTodayList1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMyDayMedicationTodayList1.Name = "lblMyDayMedicationTodayList1";
-            this.lblMyDayMedicationTodayList1.Size = new System.Drawing.Size(168, 36);
-            this.lblMyDayMedicationTodayList1.TabIndex = 0;
-            this.lblMyDayMedicationTodayList1.Text = "Memantine:";
-            // 
-            // lblMyDayMedicationToday
-            // 
-            this.lblMyDayMedicationToday.AutoSize = true;
-            this.lblMyDayMedicationToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyDayMedicationToday.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayMedicationToday.Location = new System.Drawing.Point(20, 16);
-            this.lblMyDayMedicationToday.Name = "lblMyDayMedicationToday";
-            this.lblMyDayMedicationToday.Size = new System.Drawing.Size(202, 36);
-            this.lblMyDayMedicationToday.TabIndex = 0;
-            this.lblMyDayMedicationToday.Text = "  Today           ";
+            this.lblMyDayMedication.Text = "Todays Medications:";
             // 
             // lblMyDayHead
             // 
             this.lblMyDayHead.AutoSize = true;
             this.lblMyDayHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyDayHead.ForeColor = System.Drawing.Color.White;
-            this.lblMyDayHead.Location = new System.Drawing.Point(30, 26);
+            this.lblMyDayHead.Location = new System.Drawing.Point(20, 20);
             this.lblMyDayHead.Name = "lblMyDayHead";
             this.lblMyDayHead.Size = new System.Drawing.Size(790, 54);
             this.lblMyDayHead.TabIndex = 0;
@@ -577,6 +382,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlUserMyDNA.AutoScroll = true;
             this.pnlUserMyDNA.BackColor = System.Drawing.Color.BlueViolet;
+            this.pnlUserMyDNA.Controls.Add(this.panel2);
+            this.pnlUserMyDNA.Controls.Add(this.label12);
             this.pnlUserMyDNA.Controls.Add(this.panel1);
             this.pnlUserMyDNA.Controls.Add(this.btnUserMyAudio);
             this.pnlUserMyDNA.Controls.Add(this.lblUserMyAudio);
@@ -586,11 +393,195 @@
             this.pnlUserMyDNA.Controls.Add(this.lblMyDNAHead);
             this.pnlUserMyDNA.Controls.Add(this.pnlUserMyConnections);
             this.pnlUserMyDNA.Controls.Add(this.pnlUserCreateNewConnection);
+            this.pnlUserMyDNA.Controls.Add(this.panel4);
             this.pnlUserMyDNA.Location = new System.Drawing.Point(271, 175);
             this.pnlUserMyDNA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlUserMyDNA.Name = "pnlUserMyDNA";
             this.pnlUserMyDNA.Size = new System.Drawing.Size(1268, 575);
             this.pnlUserMyDNA.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.Controls.Add(this.btnUserAddNewMedication);
+            this.panel2.Controls.Add(this.txtUserEnterMedicationName);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.monthCalendar1);
+            this.panel2.Controls.Add(this.cbUserSelectConnection);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel2.Location = new System.Drawing.Point(626, 576);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(605, 387);
+            this.panel2.TabIndex = 8;
+            // 
+            // btnUserAddNewMedication
+            // 
+            this.btnUserAddNewMedication.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUserAddNewMedication.ForeColor = System.Drawing.Color.White;
+            this.btnUserAddNewMedication.Location = new System.Drawing.Point(365, 300);
+            this.btnUserAddNewMedication.Name = "btnUserAddNewMedication";
+            this.btnUserAddNewMedication.Size = new System.Drawing.Size(202, 49);
+            this.btnUserAddNewMedication.TabIndex = 12;
+            this.btnUserAddNewMedication.Text = "Add New Medication";
+            this.btnUserAddNewMedication.UseVisualStyleBackColor = false;
+            this.btnUserAddNewMedication.Click += new System.EventHandler(this.btnUserAddMedication_Click);
+            // 
+            // txtUserEnterMedicationName
+            // 
+            this.txtUserEnterMedicationName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserEnterMedicationName.Location = new System.Drawing.Point(21, 145);
+            this.txtUserEnterMedicationName.Name = "txtUserEnterMedicationName";
+            this.txtUserEnterMedicationName.Size = new System.Drawing.Size(246, 38);
+            this.txtUserEnterMedicationName.TabIndex = 7;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(16, 100);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(271, 29);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Enter Medication Name:";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(305, 44);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 5;
+            // 
+            // cbUserSelectConnection
+            // 
+            this.cbUserSelectConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUserSelectConnection.FormattingEnabled = true;
+            this.cbUserSelectConnection.Location = new System.Drawing.Point(19, 46);
+            this.cbUserSelectConnection.Name = "cbUserSelectConnection";
+            this.cbUserSelectConnection.Size = new System.Drawing.Size(247, 39);
+            this.cbUserSelectConnection.TabIndex = 4;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(15, 12);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(215, 29);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Select Connection:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(639, 527);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(240, 42);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Medications:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(23, 92);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(571, 403);
+            this.panel1.TabIndex = 9;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(347, 75);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 36);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Edit Profile Information";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(347, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 36);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Edit Profile Picture";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(18, 347);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(503, 29);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Address: 123 nothreal st, Cincinnati Ohio 4521";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 160);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(18, 300);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(253, 38);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Last Name: Doe";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(18, 253);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(347, 38);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "First Name: Johnathon";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(11, 197);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(407, 51);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Username: User123";
             // 
             // btnUserMyAudio
             // 
@@ -1121,102 +1112,66 @@
             this.pnlUserMyConnections.Size = new System.Drawing.Size(578, 385);
             this.pnlUserMyConnections.TabIndex = 7;
             // 
-            // panel1
+            // pnlUserMyDayMedications
             // 
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(23, 92);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(571, 403);
-            this.panel1.TabIndex = 9;
+            this.pnlUserMyDayMedications.AutoScroll = true;
+            this.pnlUserMyDayMedications.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pnlUserMyDayMedications.ForeColor = System.Drawing.Color.Black;
+            this.pnlUserMyDayMedications.Location = new System.Drawing.Point(37, 159);
+            this.pnlUserMyDayMedications.Name = "pnlUserMyDayMedications";
+            this.pnlUserMyDayMedications.Padding = new System.Windows.Forms.Padding(20);
+            this.pnlUserMyDayMedications.Size = new System.Drawing.Size(1183, 385);
+            this.pnlUserMyDayMedications.TabIndex = 8;
             // 
-            // label7
+            // btnUserMyDayNotTaken
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(18, 300);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(253, 38);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Last Name: Doe";
+            this.btnUserMyDayNotTaken.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUserMyDayNotTaken.ForeColor = System.Drawing.Color.White;
+            this.btnUserMyDayNotTaken.Location = new System.Drawing.Point(783, 92);
+            this.btnUserMyDayNotTaken.Name = "btnUserMyDayNotTaken";
+            this.btnUserMyDayNotTaken.Size = new System.Drawing.Size(202, 50);
+            this.btnUserMyDayNotTaken.TabIndex = 9;
+            this.btnUserMyDayNotTaken.Text = "Report Not Taken";
+            this.btnUserMyDayNotTaken.UseVisualStyleBackColor = false;
+            this.btnUserMyDayNotTaken.Click += new System.EventHandler(this.btnUserMyDayNotTaken_Click);
             // 
-            // label9
+            // btnUserMyDayTaken
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(18, 253);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(347, 38);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "First Name: Johnathon";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.btnUserMyDayTaken.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUserMyDayTaken.ForeColor = System.Drawing.Color.White;
+            this.btnUserMyDayTaken.Location = new System.Drawing.Point(1023, 92);
+            this.btnUserMyDayTaken.Name = "btnUserMyDayTaken";
+            this.btnUserMyDayTaken.Size = new System.Drawing.Size(202, 50);
+            this.btnUserMyDayTaken.TabIndex = 10;
+            this.btnUserMyDayTaken.Text = "Report Taken";
+            this.btnUserMyDayTaken.UseVisualStyleBackColor = false;
+            this.btnUserMyDayTaken.Click += new System.EventHandler(this.btnUserMyDayTaken_Click);
             // 
-            // label10
+            // pnlUserMyDayTakenIndicator
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(11, 197);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(414, 52);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Username: User123";
+            this.pnlUserMyDayTakenIndicator.BackColor = System.Drawing.Color.DarkGray;
+            this.pnlUserMyDayTakenIndicator.Location = new System.Drawing.Point(29, 150);
+            this.pnlUserMyDayTakenIndicator.Name = "pnlUserMyDayTakenIndicator";
+            this.pnlUserMyDayTakenIndicator.Size = new System.Drawing.Size(1199, 402);
+            this.pnlUserMyDayTakenIndicator.TabIndex = 11;
             // 
-            // pictureBox1
+            // panel4
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 160);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Location = new System.Drawing.Point(0, 883);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1268, 100);
+            this.panel4.TabIndex = 11;
             // 
-            // label11
+            // panel5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(18, 347);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(503, 29);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Address: 123 nothreal st, Cincinnati Ohio 4521";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(347, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 36);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Edit Profile Picture";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(347, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 36);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Edit Profile Information";
-            this.button2.UseVisualStyleBackColor = false;
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Location = new System.Drawing.Point(0, 722);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1268, 100);
+            this.panel5.TabIndex = 12;
             // 
             // frmWelcomeUser
             // 
@@ -1227,8 +1182,8 @@
             this.Controls.Add(this.pnlUserWelcome);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.pnlNavigation);
-            this.Controls.Add(this.pnlUserMyDNA);
             this.Controls.Add(this.pnlUserMyDay);
+            this.Controls.Add(this.pnlUserMyDNA);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmWelcomeUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1242,18 +1197,13 @@
             this.pnlMyDayReminders.PerformLayout();
             this.pnlMyDayRemindersUpcomingList1.ResumeLayout(false);
             this.pnlMyDayRemindersUpcomingList1.PerformLayout();
-            this.pnlMyDayMedications.ResumeLayout(false);
-            this.pnlMyDayMedications.PerformLayout();
-            this.pnlMyDayMedicationUpcomingList2.ResumeLayout(false);
-            this.pnlMyDayMedicationUpcomingList2.PerformLayout();
-            this.pnlMyDayMedicationUpcomingList1.ResumeLayout(false);
-            this.pnlMyDayMedicationUpcomingList1.PerformLayout();
-            this.pnlMyDayMedicationTodayList2.ResumeLayout(false);
-            this.pnlMyDayMedicationTodayList2.PerformLayout();
-            this.pnlMyDayMedicationTodayList1.ResumeLayout(false);
-            this.pnlMyDayMedicationTodayList1.PerformLayout();
             this.pnlUserMyDNA.ResumeLayout(false);
             this.pnlUserMyDNA.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1261,9 +1211,6 @@
             this.panel6.ResumeLayout(false);
             this.pnlUserCreateNewConnection.ResumeLayout(false);
             this.pnlUserCreateNewConnection.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1279,24 +1226,7 @@
         private System.Windows.Forms.Panel pnlUserWelcome;
         private System.Windows.Forms.Panel pnlUserMyDay;
         private System.Windows.Forms.Label lblMyDayMedication;
-        private System.Windows.Forms.Panel pnlMyDayMedications;
-        private System.Windows.Forms.Label lblMyDayMedicationToday;
         private System.Windows.Forms.Label lblMyDayHead;
-        private System.Windows.Forms.Panel pnlMyDayMedicationUpcomingList2;
-        private System.Windows.Forms.Panel pnlMyDayMedicationUpcomingList1;
-        private System.Windows.Forms.Label lblMyDayMedicationUpcoming;
-        private System.Windows.Forms.Panel pnlMyDayMedicationTodayList2;
-        private System.Windows.Forms.Panel pnlMyDayMedicationTodayList1;
-        private System.Windows.Forms.Label lblMyDayMedicationUpcomingList2;
-        private System.Windows.Forms.Label lblMyDayMedicationUpcomingList1;
-        private System.Windows.Forms.Label lblMyDayMedicationTodayList2;
-        private System.Windows.Forms.Label lblMyDayMedicationTodayList1;
-        private System.Windows.Forms.Button btnTaken2;
-        private System.Windows.Forms.Button btnTaken1;
-        private System.Windows.Forms.Button btnNotTaken1;
-        private System.Windows.Forms.Panel pnlMedicationStatus2;
-        private System.Windows.Forms.Panel pnlMedicationStatus1;
-        private System.Windows.Forms.Button btnNotTaken2;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnChatsView;
         private System.Windows.Forms.Button btnMyDNA;
@@ -1365,6 +1295,20 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnUserAddNewMedication;
+        private System.Windows.Forms.TextBox txtUserEnterMedicationName;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ComboBox cbUserSelectConnection;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.FlowLayoutPanel pnlUserMyDayMedications;
+        private System.Windows.Forms.Button btnUserMyDayTaken;
+        private System.Windows.Forms.Button btnUserMyDayNotTaken;
+        private System.Windows.Forms.Panel pnlUserMyDayTakenIndicator;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 
