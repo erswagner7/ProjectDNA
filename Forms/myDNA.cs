@@ -15,12 +15,9 @@ namespace PrototypeDNA.Forms
         public myDNA()
         {
             InitializeComponent();
-            lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString();
+            //lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString
+        }
 
-
-            /*
-             
-       
         private void btnUserNewConnection_Click(object sender, EventArgs e)
         {
             pnlUserMyConnections.Hide();
@@ -57,7 +54,7 @@ namespace PrototypeDNA.Forms
             lblUserNewConnectionAge.ForeColor = Color.White;
             lblUserNewConnectionAge.AutoSize = true;
             newPanel.Controls.Add(lblUserNewConnectionAge);
-            
+
             Label lblUserNewConnectionAddress = new Label();
             lblUserNewConnectionAddress.Text = "Address: " + txtUserCreateNewConnectionAddress.Text;
             lblUserNewConnectionAddress.Font = new Font(FontFamily.GenericSansSerif, 16);
@@ -84,11 +81,6 @@ namespace PrototypeDNA.Forms
             txtUserCreateNewConnectionLastname.Text = "";
             txtUserCreateNewConnectionAge.Text = "";
             txtUserCreateNewConnectionAddress.Text = "";
-        }
-
-             * */
-
-
         }
     }
 }
