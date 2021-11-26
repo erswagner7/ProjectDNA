@@ -99,6 +99,7 @@ namespace PrototypeDNA
             this.pContainer.Controls.Clear();
             Forms.myDay myDay = new Forms.myDay() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pContainer.Controls.Add(myDay);
+            myDay.BackColor = this.BackColor;
             myDay.Show();
 
             btnMyDay.ForeColor = Color.White;
