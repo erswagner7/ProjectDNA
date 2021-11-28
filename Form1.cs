@@ -164,37 +164,7 @@ namespace PrototypeDNA
 
         }
 
-        private void btnUserAddMedication_Click(object sender, EventArgs e)
-        {
-            Panel pnlUserMyDayNewMedication = new Panel();
-            pnlUserMyDayNewMedication.Height = 40;
-            pnlUserMyDayNewMedication.Width = (pnlUserMyDayMedications.Width - 40);
-            pnlUserMyDayNewMedication.Margin = new Padding(7);
-            pnlUserMyDayNewMedication.BackColor = Color.DarkGray;
-            pnlUserMyDayMedications.Controls.Add(pnlUserMyDayNewMedication);
-
-            Label lblUserMyDayNewMedicationName = new Label();
-            lblUserMyDayNewMedicationName.Text = "Medication: " + txtUserEnterMedicationName.Text;
-            lblUserMyDayNewMedicationName.Location = new Point(5, 5);
-            lblUserMyDayNewMedicationName.Font = new Font(FontFamily.GenericSansSerif, 16);
-            lblUserMyDayNewMedicationName.Margin = new Padding(7);
-            lblUserMyDayNewMedicationName.ForeColor = Color.White;
-            lblUserMyDayNewMedicationName.AutoSize = true;
-            pnlUserMyDayNewMedication.Controls.Add(lblUserMyDayNewMedicationName);
-
-            Label pnlUserMyDayNewMedicationDate = new Label();
-            pnlUserMyDayNewMedicationDate.Text = "Date: Today";
-            pnlUserMyDayNewMedicationDate.Location = new Point(pnlUserMyDayNewMedication.Width - 250, 5);
-            pnlUserMyDayNewMedicationDate.Font = new Font(FontFamily.GenericSansSerif, 16);
-            pnlUserMyDayNewMedicationDate.Margin = new Padding(7);
-            pnlUserMyDayNewMedicationDate.ForeColor = Color.White;
-            pnlUserMyDayNewMedicationDate.AutoSize = true;
-            pnlUserMyDayNewMedication.Controls.Add(pnlUserMyDayNewMedicationDate);
-
-            pnlUserMyDayTakenIndicator.BackColor = Color.Yellow;
-
-            txtUserEnterMedicationName.Text = "";
-        }
+        
 
         private void btnUserMyDayTaken_Click(object sender, EventArgs e)
         {
