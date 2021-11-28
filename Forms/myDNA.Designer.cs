@@ -93,7 +93,7 @@ namespace PrototypeDNA.Forms
             this.cbUserSelectConnection = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlMakeMedication = new System.Windows.Forms.Panel();
-            this.button53 = new System.Windows.Forms.Button();
+            this.btnAddMedication = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblEnterMeds = new System.Windows.Forms.Label();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
@@ -813,7 +813,7 @@ namespace PrototypeDNA.Forms
             // 
             this.pnlMakeMedication.BackColor = System.Drawing.Color.MidnightBlue;
             this.pnlMakeMedication.Controls.Add(this.cmbSelectConnection);
-            this.pnlMakeMedication.Controls.Add(this.button53);
+            this.pnlMakeMedication.Controls.Add(this.btnAddMedication);
             this.pnlMakeMedication.Controls.Add(this.textBox1);
             this.pnlMakeMedication.Controls.Add(this.lblEnterMeds);
             this.pnlMakeMedication.Controls.Add(this.monthCalendar2);
@@ -825,17 +825,18 @@ namespace PrototypeDNA.Forms
             this.pnlMakeMedication.Size = new System.Drawing.Size(454, 314);
             this.pnlMakeMedication.TabIndex = 19;
             // 
-            // button53
+            // btnAddMedication
             // 
-            this.button53.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button53.ForeColor = System.Drawing.Color.White;
-            this.button53.Location = new System.Drawing.Point(274, 244);
-            this.button53.Margin = new System.Windows.Forms.Padding(2);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(152, 40);
-            this.button53.TabIndex = 12;
-            this.button53.Text = "Add New Medication";
-            this.button53.UseVisualStyleBackColor = false;
+            this.btnAddMedication.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddMedication.ForeColor = System.Drawing.Color.White;
+            this.btnAddMedication.Location = new System.Drawing.Point(274, 244);
+            this.btnAddMedication.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddMedication.Name = "btnAddMedication";
+            this.btnAddMedication.Size = new System.Drawing.Size(152, 40);
+            this.btnAddMedication.TabIndex = 12;
+            this.btnAddMedication.Text = "Add New Medication";
+            this.btnAddMedication.UseVisualStyleBackColor = false;
+            this.btnAddMedication.Click += new System.EventHandler(this.btnUserAddMedication_Click);
             // 
             // textBox1
             // 
@@ -1049,7 +1050,7 @@ namespace PrototypeDNA.Forms
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblMyDNAHead;
         private System.Windows.Forms.Panel pnlMakeMedication;
-        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.Button btnAddMedication;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblEnterMeds;
         private System.Windows.Forms.MonthCalendar monthCalendar2;

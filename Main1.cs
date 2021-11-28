@@ -57,7 +57,7 @@ namespace PrototypeDNA
         private void btnMyDNA_Click(object sender, EventArgs e)
         {
             this.pContainer.Controls.Clear();
-            Forms.myDNA myDNA = new Forms.myDNA() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Forms.myDNA myDNA = new Forms.myDNA(null) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pContainer.Controls.Add(myDNA);
             myDNA.Show();
 

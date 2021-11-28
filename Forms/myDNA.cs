@@ -12,17 +12,11 @@ namespace PrototypeDNA.Forms
 {
     public partial class myDNA : Form
     {
-        readonly myDay mD;
+        myDay mD;
         public myDNA(myDay mDay)
         {
             InitializeComponent();
             mD = mDay;
-            //lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString
-        }
-
-        public myDNA()
-        {
-            InitializeComponent();
         }
 
         private void btnUserNewConnection_Click(object sender, EventArgs e)
@@ -94,11 +88,12 @@ namespace PrototypeDNA.Forms
         private void btnUserAddMedication_Click(object sender, EventArgs e)
         {
             Panel pnlUserMyDayNewMedication = new Panel();
+            mD.pnlUserMyDayMedications.Controls.Add(pnlUserMyDayNewMedication);
             pnlUserMyDayNewMedication.Height = 40;
             pnlUserMyDayNewMedication.Width = (mD.pnlUserMyDayMedications.Width - 40);
             pnlUserMyDayNewMedication.Margin = new Padding(7);
             pnlUserMyDayNewMedication.BackColor = Color.DarkGray;
-            mD.pnlUserMyDayMedications.Controls.Add(pnlUserMyDayNewMedication);
+            
 
             Label lblUserMyDayNewMedicationName = new Label();
             lblUserMyDayNewMedicationName.Text = "Medication: " + txtUserEnterMedicationName.Text;
