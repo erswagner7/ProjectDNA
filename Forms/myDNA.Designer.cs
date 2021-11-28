@@ -86,14 +86,20 @@ namespace PrototypeDNA.Forms
             this.label21 = new System.Windows.Forms.Label();
             this.txtUserCreateNewConnectionUsername = new System.Windows.Forms.TextBox();
             this.lblUserCreateNewConnectionUsername = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnUserAddNewMedication = new System.Windows.Forms.Button();
             this.txtUserEnterMedicationName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.cbUserSelectConnection = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pnlMakeMedication = new System.Windows.Forms.Panel();
+            this.button53 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblEnterMeds = new System.Windows.Forms.Label();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.lblSelectConnection = new System.Windows.Forms.Label();
+            this.lblMeds = new System.Windows.Forms.Label();
+            this.cmbSelectConnection = new System.Windows.Forms.ComboBox();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel14.SuspendLayout();
@@ -101,7 +107,7 @@ namespace PrototypeDNA.Forms
             this.panel17.SuspendLayout();
             this.panel19.SuspendLayout();
             this.pnlUserCreateNewConnection.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlMakeMedication.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel13
@@ -742,22 +748,6 @@ namespace PrototypeDNA.Forms
             this.lblUserCreateNewConnectionUsername.TabIndex = 1;
             this.lblUserCreateNewConnectionUsername.Text = "Username:";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Controls.Add(this.btnUserAddNewMedication);
-            this.panel2.Controls.Add(this.txtUserEnterMedicationName);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.monthCalendar1);
-            this.panel2.Controls.Add(this.cbUserSelectConnection);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(470, 466);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(454, 314);
-            this.panel2.TabIndex = 19;
-            // 
             // btnUserAddNewMedication
             // 
             this.btnUserAddNewMedication.BackColor = System.Drawing.Color.MidnightBlue;
@@ -819,17 +809,93 @@ namespace PrototypeDNA.Forms
             this.label2.TabIndex = 3;
             this.label2.Text = "Select Connection:";
             // 
-            // label3
+            // pnlMakeMedication
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(479, 426);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 33);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Medications:";
+            this.pnlMakeMedication.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pnlMakeMedication.Controls.Add(this.cmbSelectConnection);
+            this.pnlMakeMedication.Controls.Add(this.button53);
+            this.pnlMakeMedication.Controls.Add(this.textBox1);
+            this.pnlMakeMedication.Controls.Add(this.lblEnterMeds);
+            this.pnlMakeMedication.Controls.Add(this.monthCalendar2);
+            this.pnlMakeMedication.Controls.Add(this.lblSelectConnection);
+            this.pnlMakeMedication.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnlMakeMedication.Location = new System.Drawing.Point(484, 468);
+            this.pnlMakeMedication.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMakeMedication.Name = "pnlMakeMedication";
+            this.pnlMakeMedication.Size = new System.Drawing.Size(454, 314);
+            this.pnlMakeMedication.TabIndex = 19;
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button53.ForeColor = System.Drawing.Color.White;
+            this.button53.Location = new System.Drawing.Point(274, 244);
+            this.button53.Margin = new System.Windows.Forms.Padding(2);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(152, 40);
+            this.button53.TabIndex = 12;
+            this.button53.Text = "Add New Medication";
+            this.button53.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(16, 118);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(186, 32);
+            this.textBox1.TabIndex = 7;
+            // 
+            // lblEnterMeds
+            // 
+            this.lblEnterMeds.AutoSize = true;
+            this.lblEnterMeds.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnterMeds.ForeColor = System.Drawing.Color.White;
+            this.lblEnterMeds.Location = new System.Drawing.Point(12, 81);
+            this.lblEnterMeds.Name = "lblEnterMeds";
+            this.lblEnterMeds.Size = new System.Drawing.Size(213, 24);
+            this.lblEnterMeds.TabIndex = 6;
+            this.lblEnterMeds.Text = "Enter Medication Name:";
+            // 
+            // monthCalendar2
+            // 
+            this.monthCalendar2.Location = new System.Drawing.Point(229, 36);
+            this.monthCalendar2.Margin = new System.Windows.Forms.Padding(7);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 5;
+            // 
+            // lblSelectConnection
+            // 
+            this.lblSelectConnection.AutoSize = true;
+            this.lblSelectConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectConnection.ForeColor = System.Drawing.Color.White;
+            this.lblSelectConnection.Location = new System.Drawing.Point(11, 10);
+            this.lblSelectConnection.Name = "lblSelectConnection";
+            this.lblSelectConnection.Size = new System.Drawing.Size(169, 24);
+            this.lblSelectConnection.TabIndex = 3;
+            this.lblSelectConnection.Text = "Select Connection:";
+            // 
+            // lblMeds
+            // 
+            this.lblMeds.AutoSize = true;
+            this.lblMeds.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeds.ForeColor = System.Drawing.Color.White;
+            this.lblMeds.Location = new System.Drawing.Point(492, 429);
+            this.lblMeds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMeds.Name = "lblMeds";
+            this.lblMeds.Size = new System.Drawing.Size(191, 33);
+            this.lblMeds.TabIndex = 20;
+            this.lblMeds.Text = "Medications:";
+            // 
+            // cmbSelectConnection
+            // 
+            this.cmbSelectConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSelectConnection.FormattingEnabled = true;
+            this.cmbSelectConnection.Location = new System.Drawing.Point(16, 36);
+            this.cmbSelectConnection.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSelectConnection.Name = "cmbSelectConnection";
+            this.cmbSelectConnection.Size = new System.Drawing.Size(186, 34);
+            this.cmbSelectConnection.TabIndex = 4;
             // 
             // myDNA
             // 
@@ -838,8 +904,8 @@ namespace PrototypeDNA.Forms
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.BlueViolet;
             this.ClientSize = new System.Drawing.Size(965, 805);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pnlMakeMedication);
+            this.Controls.Add(this.lblMeds);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.btnUserMyAudio);
             this.Controls.Add(this.lblUserMyAudio);
@@ -862,8 +928,8 @@ namespace PrototypeDNA.Forms
             this.panel19.ResumeLayout(false);
             this.pnlUserCreateNewConnection.ResumeLayout(false);
             this.pnlUserCreateNewConnection.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlMakeMedication.ResumeLayout(false);
+            this.pnlMakeMedication.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -871,7 +937,6 @@ namespace PrototypeDNA.Forms
 
         #endregion
 
-<<<<<<< Updated upstream
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button32;
@@ -929,17 +994,13 @@ namespace PrototypeDNA.Forms
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtUserCreateNewConnectionUsername;
         private System.Windows.Forms.Label lblUserCreateNewConnectionUsername;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnUserAddNewMedication;
         private System.Windows.Forms.TextBox txtUserEnterMedicationName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.ComboBox cbUserSelectConnection;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-=======
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button23;
@@ -982,14 +1043,18 @@ namespace PrototypeDNA.Forms
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblMyDNAHead;
->>>>>>> Stashed changes
+        private System.Windows.Forms.Panel pnlMakeMedication;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblEnterMeds;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Label lblSelectConnection;
+        private System.Windows.Forms.Label lblMeds;
+        private System.Windows.Forms.ComboBox cmbSelectConnection;
     }
 }

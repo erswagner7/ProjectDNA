@@ -12,10 +12,17 @@ namespace PrototypeDNA.Forms
 {
     public partial class myDNA : Form
     {
+        readonly myDay mD;
+        public myDNA(myDay mDay)
+        {
+            InitializeComponent();
+            mD = mDay;
+            //lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString
+        }
+
         public myDNA()
         {
             InitializeComponent();
-            //lblMyDNAHead.Text = "My DNA - " + DateTime.Now.ToLongDateString
         }
 
         private void btnUserNewConnection_Click(object sender, EventArgs e)
@@ -63,6 +70,7 @@ namespace PrototypeDNA.Forms
             lblUserNewConnectionAddress.AutoSize = true;
             newPanel.Controls.Add(lblUserNewConnectionAddress);
 
+            cmbSelectConnection.Items.Add(txtUserCreateNewConnectionFirstname.Text + " " + txtUserCreateNewConnectionLastname.Text);
 
             txtUserCreateNewConnectionUsername.Text = "";
             txtUserCreateNewConnectionFirstname.Text = "";
@@ -87,10 +95,10 @@ namespace PrototypeDNA.Forms
         {
             Panel pnlUserMyDayNewMedication = new Panel();
             pnlUserMyDayNewMedication.Height = 40;
-            pnlUserMyDayNewMedication.Width = (pnlUserMyDayMedications.Width - 40);
+            pnlUserMyDayNewMedication.Width = (mD.pnlUserMyDayMedications.Width - 40);
             pnlUserMyDayNewMedication.Margin = new Padding(7);
             pnlUserMyDayNewMedication.BackColor = Color.DarkGray;
-            pnlUserMyDayMedications.Controls.Add(pnlUserMyDayNewMedication);
+            mD.pnlUserMyDayMedications.Controls.Add(pnlUserMyDayNewMedication);
 
             Label lblUserMyDayNewMedicationName = new Label();
             lblUserMyDayNewMedicationName.Text = "Medication: " + txtUserEnterMedicationName.Text;
@@ -110,7 +118,7 @@ namespace PrototypeDNA.Forms
             pnlUserMyDayNewMedicationDate.AutoSize = true;
             pnlUserMyDayNewMedication.Controls.Add(pnlUserMyDayNewMedicationDate);
 
-            pnlUserMyDayTakenIndicator.BackColor = Color.Yellow;
+            mD.pnlUserMyDayTakenIndicator.BackColor = Color.Yellow;
 
             txtUserEnterMedicationName.Text = "";
         }

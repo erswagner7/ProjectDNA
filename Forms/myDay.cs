@@ -18,22 +18,14 @@ namespace PrototypeDNA.Forms
 
             lblMyDayHead.Text = "My Day - " + DateTime.Now.ToLongDateString();
         }
-
-        private void BtnTaken1_Click(object sender, EventArgs e)
+        private void btnUserMyDayTaken_Click(object sender, EventArgs e)
         {
-            pnlMedicationStatus1.BackColor = Color.Green;
-            lblMyDayMedicationTodayList1.ForeColor = Color.Green;
-            btnNotTaken1.Hide();
-            btnTaken1.Hide();
-
+            pnlUserMyDayTakenIndicator.BackColor = Color.LightGreen;
         }
 
-        private void BtnTaken2_Click(object sender, EventArgs e)
+        private void btnUserMyDayNotTaken_Click(object sender, EventArgs e)
         {
-            pnlMedicationStatus2.BackColor = Color.Green;
-            lblMyDayMedicationTodayList2.ForeColor = Color.Green;
-            btnNotTaken2.Hide();
-            btnTaken2.Hide();
+            pnlUserMyDayTakenIndicator.BackColor = Color.Crimson;
         }
     }
 }

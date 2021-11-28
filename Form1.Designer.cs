@@ -65,10 +65,10 @@ namespace PrototypeDNA
             this.pnlUserMyDay.Controls.Add(this.lblMyDayHead);
             this.pnlUserMyDay.Controls.Add(this.pnlUserMyDayTakenIndicator);
             this.pnlUserMyDay.Controls.Add(this.panel5);
-            this.pnlUserMyDay.Location = new System.Drawing.Point(86, 128);
+            this.pnlUserMyDay.Location = new System.Drawing.Point(11, 28);
             this.pnlUserMyDay.Margin = new System.Windows.Forms.Padding(2);
             this.pnlUserMyDay.Name = "pnlUserMyDay";
-            this.pnlUserMyDay.Size = new System.Drawing.Size(951, 467);
+            this.pnlUserMyDay.Size = new System.Drawing.Size(1100, 683);
             this.pnlUserMyDay.TabIndex = 6;
             // 
             // btnUserMyDayTaken
@@ -228,7 +228,7 @@ namespace PrototypeDNA
             this.panel5.Location = new System.Drawing.Point(0, 587);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(917, 81);
+            this.panel5.Size = new System.Drawing.Size(1083, 81);
             this.panel5.TabIndex = 12;
             // 
             // Form1

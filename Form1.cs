@@ -166,15 +166,7 @@ namespace PrototypeDNA
 
         
 
-        private void btnUserMyDayTaken_Click(object sender, EventArgs e)
-        {
-            pnlUserMyDayTakenIndicator.BackColor = Color.LightGreen;
-        }
-
-        private void btnUserMyDayNotTaken_Click(object sender, EventArgs e)
-        {
-            pnlUserMyDayTakenIndicator.BackColor = Color.Crimson;
-        }
+        
     }
          */
     }
