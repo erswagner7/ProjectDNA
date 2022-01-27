@@ -28,11 +28,11 @@ const renderBody = (item, index) => (
     </tr>
 )
 
-const Customers = () => {
+const Chats = () => {
     return (
         <div>
             <h2 className="page-header">
-                customers
+                Chats
             </h2>
             <div className="row">
                 <div className="col-12">
@@ -53,4 +53,4 @@ const Customers = () => {
     )
 }
 
-export default Customers
+export default Chats

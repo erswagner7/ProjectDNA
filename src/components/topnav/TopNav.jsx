@@ -15,7 +15,7 @@ import user_image from '../../assets/images/tuat.png'
 import user_menu from '../../assets/JsonData/user_menus.json'
 
 const curr_user = {
-    display_name: 'Tuat Tran',
+    display_name: 'John Doe',
     image: user_image
 }
 
@@ -65,15 +65,12 @@ const Topnav = () => {
                 <div className="topnav__right-item">
                     <Dropdown
                         icon='bx bx-bell'
-                        badge='12'
+                        badge='3'
                         contentData={notifications}
                         renderItems={(item, index) => renderNotificationItem(item, index)}
                         renderFooter={() => <Link to='/'>View All</Link>}
                     />
                     {/* dropdown here */}
-                </div>
-                <div className="topnav__right-item">
-                    <ThemeMenu/>
                 </div>
             </div>
         </div>
