@@ -58,3 +58,9 @@
 .status-card:hover {
     color: var(--txt-white);
 }
+button{
+    background-color: grey;
+    color: white;
+    border-radius: 1em;
+    padding: .5em;
+}

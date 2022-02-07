@@ -1,6 +1,12 @@
 .table-wrapper {
     overflow-y: auto;
 }
+button{
+    background-color: grey;
+    color: white;
+    border-radius: 1em;
+    padding: .5em;
+}
 
 table {
     width: 100%;
@@ -60,3 +66,4 @@ tbody > tr:hover {
     color: var(--txt-white);
     background-color: var(--second-color);
 }
+
