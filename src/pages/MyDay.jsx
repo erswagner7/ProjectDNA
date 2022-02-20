@@ -56,7 +56,7 @@ const MyDayMedication = {
             id: "#OD1715",
             user: "john doe",
             date: "7 Mar 2022",
-            price: "Donepezil",
+            price: "Donepezilo",
             status: "Pending"
         },
         {
@@ -82,6 +82,13 @@ const renderOrderHead = (item, index) => (
 function clickReport(){
     alert('Reported Taken');
 }
+function changeStatus(){
+    if (orderStatus = "Not Taken"){
+        orderStatus = "Taken"
+    }
+
+}
+
 const renderOrderBody = (item, index) => (
     <tr key={index}>
         <td>{item.id}</td>
