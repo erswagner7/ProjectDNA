@@ -14,7 +14,7 @@ import Badge from '../components/badge/Badge'
 
 import statusCards from '../assets/JsonData/status-card-data.json'
 
-const latestOrders = {
+const MyDayMedication = {
     header: [
         "Medication id",
         "User",
@@ -114,9 +114,9 @@ const Dashboard = () => {
                         </div>
                         <div className="card__body">
                             <Table
-                                headData={latestOrders.header}
+                                headData={MyDayMedication.header}
                                 renderHead={(item, index) => renderOrderHead(item, index)}
-                                bodyData={latestOrders.body}
+                                bodyData={MyDayMedication.body}
                                 renderBody={(item, index) => renderOrderBody(item, index)}
                             />
                         </div>
