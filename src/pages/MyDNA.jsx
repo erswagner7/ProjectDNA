@@ -10,6 +10,7 @@ import Table from "../components/table/Table";
 
 const MyProfile = {
   header: [
+    "Profile Image",
     "User id",
     "Username",
     "First Name",
@@ -19,6 +20,7 @@ const MyProfile = {
   ],
   body: [
     {
+      profileImage: '',
       id: "#0001",
       username: "johnD123",
       firstname: "John",
@@ -30,6 +32,7 @@ const MyProfile = {
 };
 const MyConnections = {
     header: [
+      "Profile Image",
       "User id",
       "Username",
       "First Name",
@@ -39,6 +42,7 @@ const MyConnections = {
     ],
     body: [
       {
+        profileImage: '',
         id: "#0341",
         username: "janeC225",
         firstname: "Jane",
@@ -54,6 +58,7 @@ function clickReport() {
 }
 const renderOrderBody = (item, index) => (
   <tr key={index}>
+    <td>{<img className='table_profile_image' src='/static/media/tuat.c7a4c473.png'></img>}</td>
     <td>{item.id}</td>
     <td>{item.username}</td>
     <td>{item.firstname}</td>

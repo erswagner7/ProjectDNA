@@ -15,3 +15,10 @@ h3{
   float: right;
   background-color: rgb(136, 136, 136);
 }
+.table_profile_image{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 2em;
+}

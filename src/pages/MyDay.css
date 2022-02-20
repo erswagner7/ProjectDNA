@@ -1,0 +1,18 @@
+.card_header_mydna{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.heading_user_image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.heading_user__image > img {
+  width: 100%;
+}
+.user_image{
+  width: 100%;
+}
