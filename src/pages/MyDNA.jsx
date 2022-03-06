@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Component, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import './MyDNA.css'
 
 import Table from "../components/table/Table";
+
 
 const MyProfile = {
   header: [
@@ -52,6 +53,8 @@ const MyConnections = {
       },
     ],
   };
+
+
 const renderOrderHead = (item, index) => <th key={index}>{item}</th>;
 function clickReport() {
   alert("Reported Taken");
@@ -68,9 +71,26 @@ const renderOrderBody = (item, index) => (
   </tr>
 );
 
-const Dashboard = () => {
-  const themeReducer = useSelector((state) => state.ThemeReducer.mode);
+class MyDNA extends Component {
 
+  constructor(props)
+  {
+  
+    super(props);
+    this.state={
+      NewMedicationName:'',
+      NewMedicationDate:''
+    }
+  }
+
+  handleChange= (event) =>{
+    event.preventDefault();
+    const {name, value} = event.target;
+  this.setState({[name]:value});
+  console.log(this.state);
+  }
+
+  render(){
   return (
     <div>
       <h2 className="page-header">My DNA</h2>
@@ -111,7 +131,7 @@ const Dashboard = () => {
                 <div>
                   <label>
                     User ID:
-                    <input class="textfield" type="text" name="NewUserID" />
+                    <input class="text" type="text" name="NewUserID" />
                   </label>
                   <input class="button" type="submit" value="Add New Connection" />
                 </div>
@@ -128,21 +148,16 @@ const Dashboard = () => {
               <h3>Add Medications</h3>
             </div>
             <div className="card__body">
-              <form>
-                <div>
-                  <label>
-                    Medication Name:
-                    <input class="textfield" type="text" name="NewMedicationName" />
-                  </label>
-                  
+              <form method='post' action='http://localhost:3000'>
+                <div className="NewMedicationName">
+                  <label hmtlFor='NewMedicationName'>Medication Name:</label>
+                    <input class="text" type="text" name="NewMedicationName" onChange={this.handleChange}/>
                 </div>
-                <div>
-                  <label>
-                    Schedule Date:
-                    <input class="textfield" type="Date" name="NewMedicationDate" />
-                  </label>
-                  <input class="button" type="submit" value="Add New Medication" />
+                <div className='NewMedicationDate'>
+                  <label hmtlFor='NewMedicationDate'>Schedule Date:</label>
+                    <input class="text" type="Date" name="NewMedicationDate" onChange={this.handleChange}/>
                 </div>
+                <input class="button" type="submit" value="Add New Medication" />
               </form>
             </div>
             <div className="card__footer">
@@ -154,5 +169,8 @@ const Dashboard = () => {
     </div>
   );
 };
+};
 
-export default Dashboard;
+
+export default MyDNA;
+
