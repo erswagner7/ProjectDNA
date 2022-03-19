@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 
+import './MyDay.css'
+
 import { useSelector } from "react-redux";
 
-import './Profile.css'
+import Table from "../components/table/Table";
 
 
 const MyProfile = {
@@ -44,9 +46,7 @@ const Dashboard = () => {
             <div className="card__body">
               <Table
                 headData={MyProfile.header}
-                renderHead={(item, index) => renderOrderHead(item, index)}
                 bodyData={MyProfile.body}
-                renderBody={(item, index) => renderOrderBody(item, index)}
               />
             </div>
           </div>
