@@ -28,6 +28,7 @@ const MyDayMedication = {
       date: "5 Mar 2022",
       price: "Donepezil",
       status: "Taken",
+      report: "0"
     },
     {
       id: "#OD1712",
@@ -35,6 +36,7 @@ const MyDayMedication = {
       date: "5 Mar 2022",
       price: "Rivastigmine",
       status: "Not Taken",
+      report: "1"
     },
     {
       id: "#OD1713",
@@ -42,6 +44,7 @@ const MyDayMedication = {
       date: "6 Mar 2022",
       price: "Donepezil",
       status: "Pending",
+      report: "2"
     },
     {
       id: "#OD1714",
@@ -49,6 +52,7 @@ const MyDayMedication = {
       date: "6 Mar 2022",
       price: "Rivastigmine",
       status: "Pending",
+      report: "3"
     },
     {
       id: "#OD1715",
@@ -56,6 +60,7 @@ const MyDayMedication = {
       date: "7 Mar 2022",
       price: "Donepezilo",
       status: "Pending",
+      report: "4"
     },
     {
       id: "#OD1716",
@@ -63,12 +68,12 @@ const MyDayMedication = {
       date: "7 Mar 2022",
       price: "Rivastigmine",
       status: "Pending",
+      report: "5"
     },
   ],
 };
 
 const orderStatus = {
-  shipping: "primary",
   Pending: "warning",
   Taken: "success",
   "Not Taken": "danger",
@@ -78,10 +83,15 @@ const renderOrderHead = (item, index) => <th key={index}>{item}</th>;
 function clickReport() {
   alert("Reported Taken");
 }
-function changeStatus() {
-  if ((orderStatus = "Not Taken")) {
-    orderStatus = "Taken";
-  }
+function changeStatus(item,index) {
+  //if ((orderStatus[item.status] == "Not Taken")) {
+    //alert(index);
+    //MyDayMedication.status = "Taken";
+  //}
+  /*if ((orderStatus[item.status] == "Not Taken")) {
+    item.status[index] = "Taken";
+    //MyDayMedication.status = "Taken";
+  }*/
 }
 
 const renderOrderBody = (item, index) => (
@@ -94,7 +104,7 @@ const renderOrderBody = (item, index) => (
       <Badge type={orderStatus[item.status]} content={item.status} />
     </td>
     <td>
-      <button onClick={clickReport} type="primary">
+      <button onClick={changeStatus(item,index)} type="primary">
         Report Taken
       </button>
     </td>
