@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import { useSelector } from "react-redux";
 
 import ImageUploading from "react-images-uploading"
 
-import './Profile.css'
+import user_image from "../components/topnav/TopNav"
 
+import './Profile.css'
 
 const MyProfile = {
   header: [
@@ -47,6 +48,22 @@ const renderOrderBody = (item, index) => (
 
 const Dashboard = () => {
   const themeReducer = useSelector((state) => state.ThemeReducer.mode);
+  
+  const [images, setImages] = useState([]);
+  const [imageURLs, setImageURLs] = useState([]);
+
+  useEffect(() => {
+      if (images.length < 1) return;
+      const newImageURLs = [];
+      images.forEach(image => newImageURLs.push(URL.createObjectURL(image)));
+      setImageURLs(newImageURLs);
+  }, [images]);
+
+
+
+    function onImageChange(e) {
+        setImages([...e.target.files]);
+    }
 
   return (
     <div>
@@ -68,6 +85,9 @@ const Dashboard = () => {
             </div>
           </div>
             <div>
+            <input type="file" multiple accept="image/*" onChange={onImageChange} />
+            {imageURLs.map(imageSrc => <img src={imageSrc} />)}
+
               <input class="button" type="submit" value="Other User Settings" />
           </div>
         </div>
