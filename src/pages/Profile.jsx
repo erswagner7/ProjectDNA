@@ -29,19 +29,6 @@ const MyProfile = {
     },
   ],
 };
-const renderOrderHead = (item, index) => <th key={index}>{item}</th>;
-
-const renderOrderBody = (item, index) => (
-  <tr key={index}>
-    <td>{item.profileImage}</td>
-    <td>{item.id}</td>
-    <td>{item.username}</td>
-    <td>{item.firstname}</td>
-    <td>{item.lastname}</td>
-    <td>{item.phone}</td>
-    <td>{item.address}</td>
-  </tr>
-);
 
 const Dashboard = () => {
   const themeReducer = useSelector((state) => state.ThemeReducer.mode);
@@ -57,12 +44,12 @@ const Dashboard = () => {
               <h3>My Profile</h3>
             </div>
             <div className="card__body">
-              <table
+              <Table
                 headData={MyProfile.header}
                 renderHead={(item, index) => renderOrderHead(item, index)}
                 bodyData={MyProfile.body}
                 renderBody={(item, index) => renderOrderBody(item, index)}
-                />
+              />
             </div>
           </div>
             <div>
