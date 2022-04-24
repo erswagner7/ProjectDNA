@@ -2,15 +2,14 @@ import React from 'react'
 
 import Table from '../components/table/Table'
 
-import customerList from '../assets/JsonData/customers-list.json'
+import customerList from '../assets/JsonData/chat-log.json'
 
 const customerTableHead = [
     '',
     'name',
     'email',
     'phone',
-    'total orders',
-    'total spend',
+    'missed calls',
     'location'
 ]
 
@@ -22,11 +21,35 @@ const renderBody = (item, index) => (
         <td>{item.name}</td>
         <td>{item.email}</td>
         <td>{item.phone}</td>
-        <td>{item.total_orders}</td>
-        <td>{item.total_spend}</td>
+        <td>{item.missed_calls}</td>
         <td>{item.location}</td>
+        <td>
+            <button type="primary">
+            Call
+            </button>
+        </td>
+        <td>
+            <button type="primary">
+            Message
+            </button>
+        </td>
     </tr>
 )
+
+/*
+<td>
+            <button onClick={alert("Calling...")} type="primary">
+            Call
+            </button>
+        </td>
+        <td>
+            <button onClick={alert("Messaging...")} type="primary">
+            Message
+            </button>
+        </td>
+
+*/
+
 
 const Chats = () => {
     return (
